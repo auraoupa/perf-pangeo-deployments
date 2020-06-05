@@ -76,7 +76,7 @@ For the machine with different computation nodes, several tests will be made.
     </tbody>
 </table>
 
-- Perf 1 : Dask delayed operation of temporal mean
+- Perf 2 : Dask delayed operation of temporal mean
 
 <table>
     <thead>
@@ -141,3 +141,67 @@ For the machine with different computation nodes, several tests will be made.
     </tbody>
 </table>
 
+- Perf 3 : Actual computation of temporal mean
+
+<table>
+    <thead>
+        <tr>
+            <th>Machine</th>
+            <th>Node type</th>
+            <th>Nb workers</th>
+            <th>Total memory</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>Personnal Computer</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td>Cluster cal1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cluster dahu GRICAD</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC hal CNES</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC occigen CINES</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC jean-zay IDRIS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>PANGEO cloud</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
