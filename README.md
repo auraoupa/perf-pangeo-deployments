@@ -70,7 +70,7 @@ For the machine with different computation nodes, several tests will be made.
         </tr>
         <tr>
             <td>PANGEO cloud</td>
-            <td>b</td>
+            <td></td>
             <td></td>
         </tr>
     </tbody>
