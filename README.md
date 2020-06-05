@@ -21,7 +21,7 @@ The dataset is a zarr archive, is 621Go big and contains 17 641 individual files
 
 The opening of the zarr (perf 1), the virtual computation of the time-mean over the whole period (perf 2) and the actual computation (perf 3) will be timed.
 
-To garantee the robustness of the test, the exact same python configuration will be deployed, it is described in the conda environment.yml file.
+To garantee the robustness of the test, the exact same python configuration will be deployed, it is described in the [conda environment.yml]() file.
 
 For the machine with different computation nodes, several tests will be made.
 
