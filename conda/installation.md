@@ -2,7 +2,7 @@
 
 ## The configuration file 
 
-  - [environment.yml](../environment.yml)
+  - [environment.yml](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml)
   
 ## On jupytr
 
