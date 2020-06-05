@@ -15,7 +15,7 @@
 The exact same dataset has been uploaded in every PANGEO deployment : the sea surface height in the North Atlantic 
 region simulated by NEMO between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH. 
 
-The dataset is a zarr archive, is 621Go big and contains 17 641 individual files.
+The dataset is a zarr archive, is 621GB big and contains 17 641 individual files, contains 11688x8354x4729 points (1,85TB) with a chunksize of 240x240x480 (110MB).
 
 ## The tests
 
@@ -46,7 +46,7 @@ For the machine with different computation nodes, several tests will be made.
         <tr>
             <td>Cluster cal1</td>
             <td></td>
-            <td></td>
+            <td>705 ms</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
@@ -99,9 +99,9 @@ For the machine with different computation nodes, several tests will be made.
         <tr>
             <td>Cluster cal1</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>2</td>
+            <td>8.39GB</td>
+            <td>179 ms</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
@@ -141,7 +141,7 @@ For the machine with different computation nodes, several tests will be made.
     </tbody>
 </table>
 
-- Perf 3 : Actual computation of temporal mean
+- Perf 3 : Actual computation of temporal mean : 41 761 tasks over 360 chunks
 
 <table>
     <thead>
