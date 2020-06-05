@@ -27,6 +27,53 @@ For the machine with different computation nodes, several tests will be made.
 
 ## Results
 
+- Perf 1 : Opening the 621Go zarr archive
 
+<table>
+    <thead>
+        <tr>
+            <th>Machine</th>
+            <th>File System</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>Personnal Computer</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td>Cluster cal1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cluster dahu GRICAD</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC hal CNES</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC occigen CINES</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC jean-zay IDRIS</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>PANGEO cloud</td>
+            <td>b</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 
