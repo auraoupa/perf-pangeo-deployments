@@ -3,12 +3,12 @@
 ## Pangeo deployments
 
   - personnal computer
-  - IGE cluster cal1
-  - GRICAD intensive computing cluster dahu
-  - CNES intensive computing cluster hal
-  - CINES supercomputer occigen
-  - IDRIS supercomputer jean-zay
-  - PANGEO cloud
+  - [IGE](http://www.ige-grenoble.fr/) cluster cal1
+  - [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) intensive computing cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
+  - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
+  - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
+  - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
+  - [PANGEO](https://pangeo.io/index.html) [cloud](https://pangeo.io/deployments.html)
 
 ## The data
 
