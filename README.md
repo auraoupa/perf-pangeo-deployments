@@ -95,9 +95,7 @@ For the machine with different computation nodes, several tests will be made.
              <td></td>
              <td></td>
              <td></td>
-               <td></td>
-             <td></td>
-      </tr>
+        </tr>
         <tr>
             <td>Cluster cal1</td>
             <td></td>
