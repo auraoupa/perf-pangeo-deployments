@@ -166,7 +166,7 @@ For the machine with different computation nodes, several tests will be made.
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>3h02</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
