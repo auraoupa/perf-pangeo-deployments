@@ -46,7 +46,7 @@ For the machine with different computation nodes, several tests will be made.
         <tr>
             <td>Cluster cal1</td>
             <td></td>
-            <td>705 ms</td>
+            <td>1.02s</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
@@ -101,7 +101,7 @@ For the machine with different computation nodes, several tests will be made.
             <td></td>
             <td>2</td>
             <td>8.39GB</td>
-            <td>179 ms</td>
+            <td>174 ms</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
@@ -164,8 +164,8 @@ For the machine with different computation nodes, several tests will be made.
         <tr>
             <td>Cluster cal1</td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>2</td>
+            <td>8.39GB</td>
             <td>3h02</td>
         </tr>
         <tr>
