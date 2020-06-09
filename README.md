@@ -111,14 +111,14 @@ For the machine with different computation nodes, several tests will be made.
     </thead>
     <tbody>
         <tr>
-             <th rowspan="2" scope="rowgroup">Personnal Computer</th>
-             <th scope="row"> Normal nodes</th>
+             <td rowspan="2" scope="rowgroup">Personnal Computer</td>
+             <td scope="row"> Normal nodes</td>
              <td>2</td>
              <td>33.66GB</td>
              <td>186ms</td>
       </tr>
       <tr>
-             <th scope="row"> Normal nodes</td>
+             <td scope="row"> Normal nodes</td>
              <td>4</td>
              <td>33.66GB</td>
              <td></td>
