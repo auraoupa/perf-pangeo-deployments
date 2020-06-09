@@ -5,6 +5,13 @@
   - personnal computer : 4 cores
   - [IGE](http://www.ige-grenoble.fr/) cluster cal1
   - [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) intensive computing cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
+  
+Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
+
+      - gold6130-32cores-192
+      - gold6126-24cores-192
+      - gold6244-16cores-192
+      
   - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
   
  A lot of nodes are accessible via dask-jobqueue (a job is submitted) :
