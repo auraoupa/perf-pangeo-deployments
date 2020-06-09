@@ -2,10 +2,23 @@
 
 ## Pangeo deployments
 
-  - personnal computer
+  - personnal computer : 4 cores
   - [IGE](http://www.ige-grenoble.fr/) cluster cal1
   - [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) intensive computing cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
   - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
+  
+ A lot of nodes are accessible via dask-jobqueue (a job is submitted) :
+      - Qdev-1core-4GB-12H
+      - Qdev-4cores-15GB-12h
+      - Qdevfullnode-16cores-60GB
+      - Batch-1core-5GB-12h
+      - Batch-1core-5GB-72h
+      - Batch-4cores-20GB-12h
+      - Batchfullnodes-24cores-120GB-12h
+      - Batch2019fullnodes-40cores-184GB-12h
+      - GPGPU-1 gpgpu T4-9cores-94GB-10h
+      - GPGPU-1 gpgpu V100-6cores-94GB-10h
+      
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   - [PANGEO](https://pangeo.io/index.html) [cloud](https://pangeo.io/deployments.html)
