@@ -8,6 +8,7 @@
   - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
   
  A lot of nodes are accessible via dask-jobqueue (a job is submitted) :
+ 
       - Qdev-1core-4GB-12H
       - Qdev-4cores-15GB-12h
       - Qdevfullnode-16cores-60GB
