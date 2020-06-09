@@ -28,6 +28,14 @@ Several nodes are available by submitting a job first, then launching jupyter no
       - GPGPU-1 gpgpu V100-6cores-94GB-10h
       
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
+  
+ 4 types of nodes are accessible via dask-jobqueue (a job is submitted) :
+ 
+      - HSW24-24cores-128Go
+      - BDW28-28cores-64Go
+      - VISU-28cores-256Go-6h (only 6 nodes)
+      - SkylakeGPU-224cores-3To (upon request)
+      
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   - [PANGEO](https://pangeo.io/index.html) [cloud](https://pangeo.io/deployments.html)
 
