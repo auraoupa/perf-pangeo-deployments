@@ -1,0 +1,28 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.120.40.89:43025'
+distributed.diskutils - INFO - Found stale lock file and directory '/home/ad/alberta/dask-worker-space/worker-q1tzc321', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.120.40.89:33786
+distributed.worker - INFO -          Listening to:   tcp://10.120.40.89:33786
+distributed.worker - INFO -          dashboard at:         10.120.40.89:33206
+distributed.worker - INFO - Waiting to connect to:   tcp://10.120.43.21:41954
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                    8.00 GB
+distributed.worker - INFO -       Local Directory: /home/ad/alberta/dask-worker-space/worker-2cg96i6j
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://10.120.43.21:41954
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - Connection to scheduler broken.  Reconnecting...
+tornado.application - ERROR - Exception in callback <function Worker.__init__.<locals>.<lambda> at 0x2aff5443c488>
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 907, in _run
+    return self.callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 644, in <lambda>
+    lambda: self.batched_stream.send({"op": "keep-alive"}), 60000,
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/batched.py", line 117, in send
+    raise CommClosedError
+distributed.comm.core.CommClosedError
+distributed.worker - INFO - Stopping worker at tcp://10.120.40.89:33786
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.120.40.89:43025'
+distributed.dask_worker - INFO - End worker

@@ -1,6 +1,6 @@
 name: perf-pangeo
-channels:
-  - conda-forge
+override-channels:
+  - https://artifactory.cnes.fr/artifactory/api/conda/conda
 dependencies:
   - python=3.6
   - numpy=1.18.4
@@ -16,4 +16,3 @@ dependencies:
   - jupyter=1.0.0
   - ipykernel=5.3.0
   - dask-gateway==0.7.1
-  - dask-jobqueue==0.7.1
