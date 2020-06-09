@@ -62,7 +62,7 @@ For the machine with different computation nodes, several tests will be made.
         <tr>
              <td>Personnal Computer</td>
              <td></td>
-             <td></td>
+             <td>803ms</td>
         </tr>
         <tr>
             <td>Cluster cal1</td>
@@ -111,12 +111,16 @@ For the machine with different computation nodes, several tests will be made.
     </thead>
     <tbody>
         <tr>
-             <td>Personnal Computer</td>
+             <th rowspan="2">Personnal Computer</th>
              <td></td>
+             <td>2</td>
+             <td>33.66GB</td>
+             <td>186ms</td>
+              <td></td>
+             <td>4</td>
+             <td>33.66GB</td>
              <td></td>
-             <td></td>
-             <td></td>
-        </tr>
+       </tr>
         <tr>
             <td>Cluster cal1</td>
             <td></td>
