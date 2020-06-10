@@ -37,7 +37,22 @@ Several nodes are available by submitting a job first, then launching jupyter no
       - SkylakeGPU-224cores-3To (upon request)
       
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
+  
+  Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
+
+      - Skylake-40cores-192GB
+      - GPU-V100-4cores-32GB
+      - GPU-V100-8cores-32GB (for AI only)
+      - Skylake-48cores-3TB
+      - GPU-P6000-40cores-192GB
+      
   - [PANGEO](https://pangeo.io/index.html) [cloud](https://pangeo.io/deployments.html)
+  
+  3 types of nodes are available directly in the jupyterhub :
+  
+      - small-1-4GB
+      - medium-4-8GB
+      - large-12-16GB
 
 ## The data
 
