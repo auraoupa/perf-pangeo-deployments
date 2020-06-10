@@ -188,13 +188,18 @@ For the machine with different computation nodes, several tests will be made.
         </tr>
     </thead>
     <tbody>
-        <tr>
-             <td>Personnal Computer</td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-        </tr>
+       <tr>
+             <td rowspan="2" scope="rowgroup">Personnal Computer</td>
+             <td rowspan="2" scope="rowgroup"> Normal nodes</td>
+             <td>2</td>
+             <td>33.66GB</td>
+             <td>1h42</td>
+      </tr>
+      <tr>
+             <td>4</td>
+             <td>33.66GB</td>
+             <td>1h49</td>
+       </tr>
         <tr>
             <td>Cluster cal1</td>
             <td></td>
