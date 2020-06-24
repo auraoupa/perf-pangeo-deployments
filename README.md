@@ -216,8 +216,8 @@ To garantee the robustness of the test, the exact same python configuration will
     </thead>
     <tbody>
         <tr>
-             <td">Personnal Computer</td>
-             <td"> Normal nodes</td>
+             <td>Personnal Computer</td>
+             <td> Normal nodes</td>
              <td>33.66GB</td>
              <td>1h49</td>
       </tr>
