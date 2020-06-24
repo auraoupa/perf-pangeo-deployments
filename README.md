@@ -248,8 +248,38 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td>HPC hal CNES</td>
+            <td rowspan="7" scope="rowgroup">HPC hal CNES</td>
+            <td>Qdev-1core</td>
             <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-fullnode-16cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-1core</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-fullnode-24cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch2019-fullnode-40cores</td>
             <td></td>
             <td></td>
         </tr>
@@ -303,8 +333,38 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td>HPC hal CNES</td>
+            <td rowspan="7" scope="rowgroup">HPC hal CNES</td>
+            <td>Qdev-1core</td>
             <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-fullnode-16cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-1core</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-fullnode-24cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch2019-fullnode-40cores</td>
             <td></td>
             <td></td>
         </tr>
@@ -358,8 +418,38 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td>HPC hal CNES</td>
+            <td rowspan="7" scope="rowgroup">HPC hal CNES</td>
+            <td>Qdev-1core</td>
             <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-fullnode-16cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-1core</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-fullnode-24cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch2019-fullnode-40cores</td>
             <td></td>
             <td></td>
         </tr>
