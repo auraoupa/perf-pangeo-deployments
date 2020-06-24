@@ -242,7 +242,7 @@ To garantee the robustness of the test, the exact same python configuration will
       <tr>
              <td> BDW28 node </td>
              <td>240GB</td>
-             <td></td>
+             <td>28min53</td>
        </tr>
        <tr>
              <td> VISU node </td>
