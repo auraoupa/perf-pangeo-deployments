@@ -91,7 +91,7 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
              <td>Personnal Computer</td>
              <td></td>
-             <td>803ms</td>
+             <td>(1.47+1.43)/2s</td>
         </tr>
         <tr>
             <td>Cluster cal1</td>
@@ -121,7 +121,7 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
             <td>PANGEO cloud</td>
             <td></td>
-            <td></td>
+            <td>(3.23+1.27+1.77+2.35+2.23+2.13)/6</td>
         </tr>
     </tbody>
 </table>
@@ -133,34 +133,25 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
             <th>Machine</th>
             <th>Node type</th>
-            <th>Nb workers</th>
             <th>Total memory</th>
             <th>Timing</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-             <td rowspan="2" scope="rowgroup">Personnal Computer</td>
-             <td rowspan="2" scope="rowgroup"> Normal nodes</td>
-             <td>2</td>
+             <td">Personnal Computer</td>
+             <td"> Normal nodes</td>
              <td>33.66GB</td>
-             <td>186ms</td>
+             <td>1h50</td>
       </tr>
-      <tr>
-             <td>4</td>
-             <td>33.66GB</td>
-             <td></td>
-       </tr>
-        <tr>
+       <tr>
             <td>Cluster cal1</td>
             <td></td>
-            <td>2</td>
             <td>8.39GB</td>
             <td>174 ms</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -170,14 +161,13 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
              <td rowspan="3" scope="rowgroup">HPC Occigen</td>
              <td> HSW24 node </td>
              <td>2</td>
              <td>240GB</td>
-             <td></td>
+             <td>51min48</td>
       </tr>
       <tr>
              <td> BDW28 node </td>
@@ -196,14 +186,96 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
+            <td> Small </td>
+            <td>8.59GB</td>
+            <td>1h20</td>
+        </tr>
+        <tr>
+            <td> Medium </td>
+            <td>8.59GB</td>
+            <td>1h19</td>
+        </tr>
+        <tr>
+            <td> Large </td>
+            <td>8.59GB</td>
+            <td>1h17</td>
+        </tr>
+    </tbody>
+</table>
+
+- Computation of temporal mean with 4 workers
+
+<table>
+    <thead>
+        <tr>
+            <th>Machine</th>
+            <th>Node type</th>
+            <th>Total memory</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td">Personnal Computer</td>
+             <td"> Normal nodes</td>
+             <td>33.66GB</td>
+             <td>1h49</td>
+      </tr>
+        <tr>
+            <td>Cluster dahu GRICAD</td>
+            <td></td>
+            <td></td>
             <td></td>
         </tr>
         <tr>
-            <td>PANGEO cloud</td>
+            <td>HPC hal CNES</td>
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <tr>
+             <td rowspan="3" scope="rowgroup">HPC Occigen</td>
+             <td> HSW24 node </td>
+             <td>2</td>
+             <td>240GB</td>
+             <td>51min48</td>
+      </tr>
+      <tr>
+             <td> BDW28 node </td>
+             <td>2</td>
+             <td>120GB</td>
+             <td></td>
+       </tr>
+       <tr>
+             <td> VISU node </td>
+             <td>2</td>
+             <td>270.19GB</td>
+             <td>9min17</td>
+       </tr>
+       <tr>
+            <td>HPC jean-zay IDRIS</td>
             <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
+            <td> Small </td>
+            <td>17.18GB</td>
+            <td>40min</td>
+        </tr>
+        <tr>
+            <td> Medium </td>
+            <td>17.18GB</td>
+            <td>43min</td>
+        </tr>
+        <tr>
+            <td> Large </td>
+            <td>17.18GB</td>
+            <td>39min</td>
         </tr>
     </tbody>
 </table>
