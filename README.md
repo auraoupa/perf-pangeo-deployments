@@ -77,7 +77,7 @@ To garantee the robustness of the test, the exact same python configuration will
 
 ## Results
 
-- Opening the 621Go zarr archive containing 1.85TB of data.
+- Table 1 : Opening the 621Go zarr archive containing 1.85TB of data.
 
 <table>
     <thead>
@@ -126,7 +126,7 @@ To garantee the robustness of the test, the exact same python configuration will
     </tbody>
 </table>
 
-- Computation of temporal mean with 2 workers
+- Table 3 : Computation of temporal mean with 2 workers
 
 <table>
     <thead>
@@ -165,19 +165,16 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
              <td rowspan="3" scope="rowgroup">HPC Occigen</td>
              <td> HSW24 node </td>
-             <td>2</td>
              <td>240GB</td>
              <td>51min48</td>
       </tr>
       <tr>
              <td> BDW28 node </td>
-             <td>2</td>
              <td>120GB</td>
              <td></td>
        </tr>
        <tr>
              <td> VISU node </td>
-             <td>2</td>
              <td>270.19GB</td>
              <td>9min17</td>
        </tr>
@@ -239,19 +236,16 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
              <td rowspan="3" scope="rowgroup">HPC Occigen</td>
              <td> HSW24 node </td>
-             <td>2</td>
              <td>240GB</td>
              <td>51min48</td>
       </tr>
       <tr>
              <td> BDW28 node </td>
-             <td>2</td>
              <td>120GB</td>
              <td></td>
        </tr>
        <tr>
              <td> VISU node </td>
-             <td>2</td>
              <td>270.19GB</td>
              <td>9min17</td>
        </tr>
