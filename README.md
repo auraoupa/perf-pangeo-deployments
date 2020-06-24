@@ -48,11 +48,13 @@ Several nodes are available by submitting a job first, then launching jupyter no
       
   - [PANGEO](https://pangeo.io/index.html) [cloud](https://pangeo.io/deployments.html)
   
-  3 queues  are available directly in the jupyterhub :
+  3 queues  are available directly in the jupyterhub that will access the same type of nodes (8.59GB per node) :
   
       - small-1-4GB
       - medium-4-8GB
       - large-12-16GB
+      
+So depending on the number of workers asked, the adequate queue wille be selected.
 
 ## The data
 
@@ -185,22 +187,12 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
-            <td> Small </td>
-            <td>8.59GB</td>
-            <td>1h20</td>
-        </tr>
-        <tr>
+            <td>PANGEO cloud</td>
             <td> Medium </td>
             <td>8.59GB</td>
             <td>1h19</td>
         </tr>
-        <tr>
-            <td> Large </td>
-            <td>8.59GB</td>
-            <td>1h17</td>
-        </tr>
-    </tbody>
+     </tbody>
 </table>
 
 - Table 4 : Computation of temporal mean with 4 workers
@@ -256,18 +248,8 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
-            <td> Small </td>
-            <td>17.18GB</td>
-            <td>40min</td>
-        </tr>
-        <tr>
-            <td> Medium </td>
-            <td>17.18GB</td>
-            <td>43min</td>
-        </tr>
-        <tr>
-            <td> Large </td>
+            <td>PANGEO cloud</td>
+            <td> LArge </td>
             <td>17.18GB</td>
             <td>39min</td>
         </tr>
@@ -321,17 +303,7 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
-            <td> Small </td>
-            <td>42.95GB</td>
-            <td>17min39</td>
-        </tr>
-        <tr>
-            <td> Medium </td>
-            <td><42.95GB/td>
-            <td>18min34</td>
-        </tr>
-        <tr>
+            <td>PANGEO cloud</td>
             <td> Large </td>
             <td>42.95GB</td>
             <td>18min37</td>
@@ -386,17 +358,7 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
-            <td> Small </td>
-            <td>85.9GB</td>
-            <td>10min10</td>
-        </tr>
-        <tr>
-            <td> Medium </td>
-            <td>85.9GB</td>
-            <td>11min28</td>
-        </tr>
-        <tr>
+            <td>PANGEO cloud</td>
             <td> Large </td>
             <td>85.9GB</td>
             <td>10min5</td>
