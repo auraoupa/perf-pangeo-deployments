@@ -203,7 +203,7 @@ To garantee the robustness of the test, the exact same python configuration will
     </tbody>
 </table>
 
-- Computation of temporal mean with 4 workers
+- Table 4 : Computation of temporal mean with 4 workers
 
 <table>
     <thead>
@@ -236,12 +236,12 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
              <td rowspan="3" scope="rowgroup">HPC Occigen</td>
              <td> HSW24 node </td>
-             <td>240GB</td>
-             <td>51min48</td>
+             <td>480GB</td>
+             <td></td>
       </tr>
       <tr>
              <td> BDW28 node </td>
-             <td>120GB</td>
+             <td>240GB</td>
              <td></td>
        </tr>
        <tr>
@@ -274,3 +274,132 @@ To garantee the robustness of the test, the exact same python configuration will
     </tbody>
 </table>
 
+- Table 5 : Computation of temporal mean with 10 workers
+
+<table>
+    <thead>
+        <tr>
+            <th>Machine</th>
+            <th>Node type</th>
+            <th>Total memory</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>Cluster dahu GRICAD</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC hal CNES</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+             <td rowspan="3" scope="rowgroup">HPC Occigen</td>
+             <td> HSW24 node </td>
+             <td>1.2TB</td>
+             <td>10min9</td>
+      </tr>
+      <tr>
+             <td> BDW28 node </td>
+             <td>600GB</td>
+             <td>10min52</td>
+       </tr>
+       <tr>
+             <td> VISU node </td>
+             <td></td>
+             <td></td>
+       </tr>
+       <tr>
+            <td>HPC jean-zay IDRIS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
+            <td> Small </td>
+            <td>42.95GB</td>
+            <td>17min39</td>
+        </tr>
+        <tr>
+            <td> Medium </td>
+            <td><42.95GB/td>
+            <td>18min34</td>
+        </tr>
+        <tr>
+            <td> Large </td>
+            <td>42.95GB</td>
+            <td>18min37</td>
+        </tr>
+    </tbody>
+</table>
+
+- Table 6 : Computation of temporal mean with 20 workers
+
+<table>
+    <thead>
+        <tr>
+            <th>Machine</th>
+            <th>Node type</th>
+            <th>Total memory</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>Cluster dahu GRICAD</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HPC hal CNES</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+             <td rowspan="3" scope="rowgroup">HPC Occigen</td>
+             <td> HSW24 node </td>
+             <td>2.4TB</td>
+             <td>5min7</td>
+      </tr>
+      <tr>
+             <td> BDW28 node </td>
+             <td>1.2TB</td>
+             <td>5min31</td>
+       </tr>
+       <tr>
+             <td> VISU node </td>
+             <td></td>
+             <td></td>
+       </tr>
+       <tr>
+            <td>HPC jean-zay IDRIS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3" scope="rowgroup">PANGEO cloud</td>
+            <td> Small </td>
+            <td>85.9GB</td>
+            <td>10min10</td>
+        </tr>
+        <tr>
+            <td> Medium </td>
+            <td>85.9GB</td>
+            <td>11min28</td>
+        </tr>
+        <tr>
+            <td> Large </td>
+            <td>85.9GB</td>
+            <td>10min5</td>
+        </tr>
+    </tbody>
+</table>
