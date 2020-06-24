@@ -171,7 +171,7 @@ To garantee the robustness of the test, the exact same python configuration will
       <tr>
              <td> BDW28 node </td>
              <td>120GB</td>
-             <td></td>
+             <td>57min8</td>
        </tr>
        <tr>
              <td> VISU node </td>
@@ -237,7 +237,7 @@ To garantee the robustness of the test, the exact same python configuration will
              <td rowspan="3" scope="rowgroup">HPC Occigen</td>
              <td> HSW24 node </td>
              <td>480GB</td>
-             <td></td>
+             <td>28min31</td>
       </tr>
       <tr>
              <td> BDW28 node </td>
