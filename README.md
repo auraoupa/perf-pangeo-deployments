@@ -307,7 +307,7 @@ To garantee the robustness of the test, the exact same python configuration will
         </tr>
         <tr>
             <td>PANGEO cloud</td>
-            <td> LArge </td>
+            <td> Large </td>
             <td>17.18GB</td>
             <td>39min</td>
         </tr>
