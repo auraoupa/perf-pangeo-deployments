@@ -139,8 +139,8 @@ To garantee the robustness of the test, the exact same python configuration will
     </thead>
     <tbody>
         <tr>
-             <td">Personnal Computer</td>
-             <td"> Normal nodes</td>
+             <td>Personnal Computer</td>
+             <td> Normal nodes</td>
              <td>33.66GB</td>
              <td>1h50</td>
       </tr>
@@ -247,7 +247,7 @@ To garantee the robustness of the test, the exact same python configuration will
        <tr>
              <td> VISU node </td>
              <td>270.19GB</td>
-             <td>9min17</td>
+             <td>6min55</td>
        </tr>
        <tr>
             <td>HPC jean-zay IDRIS</td>
