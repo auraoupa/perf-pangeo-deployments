@@ -24,8 +24,6 @@ Several nodes are available by submitting a job first, then launching jupyter no
       - Batch-4cores-20GB-12h
       - Batchfullnodes-24cores-120GB-12h
       - Batch2019fullnodes-40cores-184GB-12h
-      - GPGPU-1 gpgpu T4-9cores-94GB-10h
-      - GPGPU-1 gpgpu V100-6cores-94GB-10h
       
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
@@ -159,12 +157,42 @@ To garantee the robustness of the test, the exact same python configuration will
             <td></td>
         </tr>
         <tr>
-            <td>HPC hal CNES</td>
-            <td></td>
+            <td rowspan="7" scope="rowgroup">HPC hal CNES</td>
+            <td>Qdev-1core</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+         <tr>
+            <td>Qdev-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Qdev-fullnode-16cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-1core</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-4cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch-fullnode-24cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>Batch2019-fullnode-40cores</td>
+            <td></td>
+            <td></td>
+        </tr>
+       <tr>
              <td rowspan="3" scope="rowgroup">HPC Occigen</td>
              <td> HSW24 node </td>
              <td>240GB</td>
