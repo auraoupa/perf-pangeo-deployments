@@ -96,7 +96,7 @@ To garantee the robustness of the test, the exact same python configuration will
         <tr>
             <td>Cluster cal1</td>
             <td></td>
-            <td>1.02s</td>
+            <td>260ms</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
@@ -140,15 +140,15 @@ To garantee the robustness of the test, the exact same python configuration will
     <tbody>
         <tr>
              <td>Personnal Computer</td>
-             <td> Normal nodes</td>
+             <td>Normal nodes</td>
              <td>33.66GB</td>
              <td>1h50</td>
       </tr>
        <tr>
             <td>Cluster cal1</td>
-            <td></td>
+            <td><Normal nodes/td>
             <td>8.39GB</td>
-            <td>174 ms</td>
+            <td>3h19</td>
         </tr>
         <tr>
             <td>Cluster dahu GRICAD</td>
