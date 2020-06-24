@@ -2,7 +2,7 @@
 
 ## Pangeo deployments
 
-  - personnal computer : 4 cores
+  - Dell personnal computer : Processeur Intel Xeon with 4 cores
   - [IGE](http://www.ige-grenoble.fr/) team-size computing server cal1 : 20 cores in total, with a restriction to 2 cores per user
   - [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) intensive computing cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
   
@@ -48,7 +48,7 @@ Several nodes are available by submitting a job first, then launching jupyter no
       
   - [PANGEO](https://pangeo.io/index.html) [cloud](https://pangeo.io/deployments.html)
   
-  3 types of nodes are available directly in the jupyterhub :
+  3 queues  are available directly in the jupyterhub :
   
       - small-1-4GB
       - medium-4-8GB
