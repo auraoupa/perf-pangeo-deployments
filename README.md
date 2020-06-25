@@ -105,7 +105,7 @@ To garantee the robustness of the test, the exact same python configuration will
         </tr>
         <tr>
             <td>HPC hal CNES</td>
-            <td>279ms</td>
+            <td>279ms+124ms</td>
             <td></td>
         </tr>
         <tr>
@@ -169,8 +169,8 @@ To garantee the robustness of the test, the exact same python configuration will
         </tr>
          <tr>
             <td>Qdev-fullnode-16cores</td>
-            <td></td>
-            <td></td>
+            <td>120GB</td>
+            <td>45min19</td>
         </tr>
          <tr>
             <td>Batch-1core</td>
