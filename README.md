@@ -270,8 +270,8 @@ To garantee the robustness of the test, the exact same python configuration will
         </tr>
          <tr>
             <td>Batch-4cores</td>
-            <td></td>
-            <td></td>
+            <td>80GB</td>
+            <td>24min15</td>
         </tr>
          <tr>
             <td>Batch-fullnode-24cores</td>
