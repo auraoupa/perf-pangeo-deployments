@@ -213,9 +213,9 @@ To garantee the robustness of the test, the exact same python configuration will
        </tr>
        <tr>
             <td>HPC jean-zay IDRIS</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>cpu-p1</td>
+            <td>8.59GB</td>
+            <td>51min24</td>
         </tr>
         <tr>
             <td>PANGEO cloud</td>
