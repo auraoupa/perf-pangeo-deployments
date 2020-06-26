@@ -3,7 +3,7 @@
 ## Pangeo deployments
 
   - Dell personnal computer : Processeur Intel Xeon with 4 cores
-  - [IGE](http://www.ige-grenoble.fr/) team-size computing server cal1 : 20 cores in total, with a restriction to 2 cores per user
+  - [IGE](http://www.ige-grenoble.fr/) team-size computing server cal1 : 2 Inte(R)Xeon(R) CPUs with 16 cores (32 in total), with a restriction to 2 cores and 2GB per user on Virtual Machine jupytr (where jupyterhub is deployed)
   - [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) intensive computing cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
   
 Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
@@ -105,8 +105,8 @@ To garantee the robustness of the test, the exact same python configuration will
         </tr>
         <tr>
             <td>HPC hal CNES</td>
-            <td>279ms+124ms</td>
             <td></td>
+            <td>279ms+124ms</td>
         </tr>
         <tr>
             <td>HPC occigen CINES</td>
@@ -140,13 +140,13 @@ To garantee the robustness of the test, the exact same python configuration will
     <tbody>
         <tr>
              <td>Personnal Computer</td>
-             <td>Normal nodes</td>
+             <td>Intel Xeon</td>
              <td>33.66GB</td>
              <td>1h50</td>
       </tr>
        <tr>
             <td>Cluster cal1</td>
-            <td><Normal nodes/td>
+            <td>Intel Xeon</td>
             <td>8.39GB</td>
             <td>3h19</td>
         </tr>
@@ -237,7 +237,7 @@ To garantee the robustness of the test, the exact same python configuration will
     <tbody>
         <tr>
              <td>Personnal Computer</td>
-             <td> Normal nodes</td>
+             <td> Intel Xeon</td>
              <td>33.66GB</td>
              <td>1h49</td>
       </tr>
