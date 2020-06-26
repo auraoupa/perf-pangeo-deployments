@@ -164,8 +164,8 @@ To garantee the robustness of the test, the exact same python configuration will
         </tr>
          <tr>
             <td>Qdev-4cores</td>
-            <td></td>
-            <td></td>
+            <td>30GB</td>
+            <td>48min</td>
         </tr>
          <tr>
             <td>Qdev-fullnode-16cores</td>
