@@ -37,6 +37,9 @@ Several nodes are available by submitting a job first, then launching jupyter no
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   
   Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
+  
+      - normal queue cpu-p1
+      - prepost
 
       - Skylake-40cores-192GB
       - GPU-V100-4cores-32GB
