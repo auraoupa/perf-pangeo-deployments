@@ -1,0 +1,71 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://130.84.132.28:44301'
+distributed.worker - INFO -       Start worker at:  tcp://130.84.132.28:40251
+distributed.worker - INFO -          Listening to:  tcp://130.84.132.28:40251
+distributed.worker - INFO -          dashboard at:        130.84.132.28:39946
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:34921
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                   64.00 GB
+distributed.worker - INFO -       Local Directory: /gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-wwdrl9at
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:  tcp://130.84.132.27:34921
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/dask/array/numpy_compat.py:40: RuntimeWarning: invalid value encountered in true_divide
+  x = np.divide(x1, x2, out)
+distributed.worker - INFO - Connection to scheduler broken.  Reconnecting...
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Stopping worker at tcp://130.84.132.28:40251
+distributed.diskutils - ERROR - Failed to remove '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-wwdrl9at' (failed in <built-in function lstat>): [Errno 2] No such file or directory: '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-wwdrl9at'
+distributed.worker - INFO - Comm closed
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Closing Nanny at 'tcp://130.84.132.28:44301'
+distributed.dask_worker - INFO - End worker
