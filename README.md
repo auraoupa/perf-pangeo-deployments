@@ -98,7 +98,7 @@ The results are :
         <tr>
             <td>zarr</td>
             <td>893ms</td>
-            <td></td>
+            <td>5min50</td>
         </tr>
         <tr>
              <td rowspan="2" scope="rowgroup">HAL</td>
