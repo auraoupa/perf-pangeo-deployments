@@ -75,7 +75,7 @@ The dataset is a zarr archive, is 621GB big (due to compression since original d
 
 The zarr archive have been constructed from multiple netcdf4 daily files with this script.
 
-The netcdf files are available on some PANGEO deployment : occigen and hal. On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
+The netcdf files are also available on some PANGEO deployment : Occigen and HAL . On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
 
 The results are :
 
