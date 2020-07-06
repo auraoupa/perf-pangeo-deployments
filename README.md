@@ -1,6 +1,15 @@
 # Performance tests on various pangeo deployments
 
-## Pangeo deployments
+This repo gathers the results of some performance tests done with PANGEO ecosystem deployed on several machine.
+The idea is to compare the machines on one simple computation that involves a lot of data.
+I also want to know if every machine is scalable : more workers => computation faster ?
+Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will be briefly investigated.
+
+## Description of Pangeo deployments
+
+Every deployment has its own characteristics regarding the filesystem, the processors available for computation and the way we can access them.
+
+The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with Intel Xeon Processors with 4 cores. The data are accessible through a sshfs mounting (data lives on a local server)
 
   - Dell personnal computer : Processeur Intel Xeon with 4 cores
   - [IGE](http://www.ige-grenoble.fr/) team-size computing server cal1 : 2 Inte(R)Xeon(R) CPUs with 16 cores (32 in total), with a restriction to 2 cores and 2GB per user on Virtual Machine jupytr (where jupyterhub is deployed)
@@ -55,7 +64,7 @@ Several nodes are available by submitting a job first, then launching jupyter no
       - medium-4-8GB
       - large-12-16GB
       
-So depending on the number of workers asked, the adequate queue wille be selected.
+So depending on the number of workers asked, the adequate queue will be selected.
 
 ## The data
 
@@ -63,6 +72,48 @@ The exact same dataset has been uploaded in every PANGEO deployment : the sea su
 region simulated by NEMO between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH. 
 
 The dataset is a zarr archive, is 621GB big (due to compression since original data is 1.85TB) and contains 17 641 individual files, contains 11688x8354x4729 points with a chunksize of 240x240x480 (110MB).
+
+The zarr archive have been constructed from multiple netcdf4 daily files with this script.
+
+The netcdf files are available on some PANGEO deployment : occigen and hal. On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean.
+
+The results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Deployment</th>
+            <th>Format</th>
+            <th>Opening</th>
+            <th>Computing mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td rowspan="2" scope="rowgroup">Occigen</td>
+             <td>netcdf</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td>zarr</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+             <td rowspan="2" scope="rowgroup">HAL</td>
+             <td>netcdf</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td>zarr</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
 
 ## The tests
 
