@@ -1,0 +1,24 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.159.0.221:41191'
+distributed.diskutils - INFO - Found stale lock file and directory '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-8q_mm39d', purging
+distributed.diskutils - ERROR - Failed to remove '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-8q_mm39d' (failed in <built-in function rmdir>): [Errno 2] No such file or directory: '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-8q_mm39d'
+distributed.diskutils - INFO - Found stale lock file and directory '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-ijux3k3x', purging
+distributed.diskutils - ERROR - Failed to remove '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-ijux3k3x/storage' (failed in <built-in function rmdir>): [Errno 2] No such file or directory: 'storage'
+distributed.worker - INFO -       Start worker at:   tcp://10.159.0.221:41937
+distributed.worker - INFO -          Listening to:   tcp://10.159.0.221:41937
+distributed.worker - INFO -          dashboard at:         10.159.0.221:34377
+distributed.worker - INFO - Waiting to connect to:    tcp://10.159.0.46:44449
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  170.00 GB
+distributed.worker - INFO -       Local Directory: /gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-c8jw4hfs
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:    tcp://10.159.0.46:44449
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/dask/array/numpy_compat.py:40: RuntimeWarning: invalid value encountered in true_divide
+  x = np.divide(x1, x2, out)
+distributed.worker - INFO - Connection to scheduler broken.  Reconnecting...
+distributed.worker - INFO - Stopping worker at tcp://10.159.0.221:41937
+distributed.nanny - INFO - Worker closed
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.159.0.221:41191'
+distributed.dask_worker - INFO - End worker

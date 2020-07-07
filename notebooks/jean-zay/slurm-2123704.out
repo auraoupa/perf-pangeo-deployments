@@ -1,0 +1,57 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.159.0.157:33839'
+distributed.diskutils - INFO - Found stale lock file and directory '/gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-yr6sf31c', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.159.0.157:44739
+distributed.worker - INFO -          Listening to:   tcp://10.159.0.157:44739
+distributed.worker - INFO -          dashboard at:         10.159.0.157:33727
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:44338
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  170.00 GB
+distributed.worker - INFO -       Local Directory: /gpfsdswork/projects/rech/yrf/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/dask-worker-space/worker-eve9frr_
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:44338
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:44338
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:44338
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:44338
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.27:44338
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.159.0.157:33839'
+distributed.worker - INFO - Stopping worker at tcp://10.159.0.157:44739
+distributed.worker - INFO - Closed worker has not yet started: None
+distributed.dask_worker - INFO - End worker
+Traceback (most recent call last):
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/distributed/core.py", line 226, in _
+    await asyncio.wait_for(self.start(), timeout=timeout)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/asyncio/tasks.py", line 362, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/distributed/cli/dask_worker.py", line 452, in <module>
+    go()
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/distributed/cli/dask_worker.py", line 448, in go
+    main()
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/distributed/cli/dask_worker.py", line 434, in main
+    loop.run_sync(run)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 532, in run_sync
+    return future_cell[0].result()
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/distributed/cli/dask_worker.py", line 428, in run
+    await asyncio.gather(*nannies)
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/asyncio/tasks.py", line 537, in _wrap_awaitable
+    return (yield from awaitable.__await__())
+  File "/gpfswork/rech/yrf/rote001/conda/perf-pangeo/lib/python3.6/site-packages/distributed/core.py", line 232, in _
+    type(self).__name__, timeout
+concurrent.futures._base.TimeoutError: Nanny failed to start in 60 seconds
