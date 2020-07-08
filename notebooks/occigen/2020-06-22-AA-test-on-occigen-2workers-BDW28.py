@@ -10,7 +10,7 @@ import dask
 ask_workers=2
 from dask_jobqueue import SLURMCluster 
 from dask.distributed import Client 
-cluster = SLURMCluster(cores=1,processes=1,name='pangeo',walltime='00:30:00',
+cluster = SLURMCluster(cores=1,processes=1,name='pangeo',walltime='02:30:00',
                        job_extra=['--constraint=BDW28','--exclusive',
                                   '--nodes=1'],memory='60GB',
                        interface='ib0') 
@@ -32,7 +32,7 @@ print(text)
 %time mean=ds.sossheig.mean(dim='time_counter')
 #=> 445ms
 %time mean.load()
-#=> 
+#=> 57min8
 cluster.close()
 
 
