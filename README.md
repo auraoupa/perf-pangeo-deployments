@@ -104,7 +104,7 @@ The results are :
              <td rowspan="2" scope="rowgroup">HAL</td>
              <td>netcdf</td>
              <td>4.77s</td>
-             <td></td>
+             <td>>4h</td>
         </tr>
         <tr>
             <td>zarr</td>
