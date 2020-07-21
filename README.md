@@ -136,8 +136,8 @@ The results are :
         </tr>
         <tr>
             <td>1x4729x8354</td>
-            <td></td>
-            <td></td>
+            <td>179ms</td>
+            <td>14min7s</td>
             <td></td>
         </tr>
     </tbody>
