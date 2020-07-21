@@ -75,7 +75,7 @@ The dataset is a zarr archive, is 621GB big (due to compression since original d
 
 The zarr archive have been constructed from multiple netcdf4 daily files with this script.
 
-The netcdf files are also available on some PANGEO deployment : Occigen and HAL . On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
+The netcdf files are also available on some PANGEO deployment : Occigen and HAL. On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
 
 The results are :
 
@@ -104,7 +104,7 @@ The results are :
              <td rowspan="2" scope="rowgroup">HAL</td>
              <td>netcdf</td>
              <td>4.77s</td>
-             <td>>4h</td>
+             <td>>4h</td>  
         </tr>
         <tr>
             <td>zarr</td>
@@ -114,6 +114,34 @@ The results are :
     </tbody>
 </table>
 
+The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. The selection of the chunks happens when building the zarr archive or when opening the netcdf files. We have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480). The second archive is chunked only on the time dimension (1x4729x8354). Two operations will be performed with theses 2archives : a temporal mean and a spatial mean. They will be computed on HAL cluster with 20 workers and a toatl of 3.6TB.
+
+The results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Chunksize</th>
+            <th>Opening</th>
+            <th>Computing temporal mean</th>
+            <th>Computing spatial mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>240x240x480</td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td>1x4729x8354</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 ## The tests
 
