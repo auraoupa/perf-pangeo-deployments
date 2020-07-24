@@ -11,7 +11,7 @@ from dask_jobqueue import PBSCluster
 from dask.distributed import Client
 import dask.dataframe as dd
 
-cluster = PBSCluster(cores=1, memory=memory, project='PerfTestPangeo', walltime='04:00:00')
+cluster = PBSCluster(cores=1, memory=memory, project='PerfTestPangeo', walltime='06:00:00')
 cluster.scale(ask_workers)
 
 c = Client(cluster)

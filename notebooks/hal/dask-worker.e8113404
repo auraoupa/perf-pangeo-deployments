@@ -1,0 +1,29 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.120.41.79:33720'
+distributed.worker - INFO -       Start worker at:   tcp://10.120.41.79:33947
+distributed.worker - INFO -          Listening to:   tcp://10.120.41.79:33947
+distributed.worker - INFO -          dashboard at:         10.120.41.79:45602
+distributed.worker - INFO - Waiting to connect to:   tcp://10.120.43.21:32915
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  180.00 GB
+distributed.worker - INFO -       Local Directory: /home/ad/alberta/dask-worker-space/worker-rweb4xwm
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://10.120.43.21:32915
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.dask_worker - INFO - Exiting on signal 15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.120.41.79:33720'
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/queues.py", line 240, in _feed
+    send_bytes(obj)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+distributed.nanny - INFO - Worker process 180185 was killed by signal 15
+/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 1 leaked semaphores to clean up at shutdown
+  len(cache))
+distributed.dask_worker - INFO - End worker

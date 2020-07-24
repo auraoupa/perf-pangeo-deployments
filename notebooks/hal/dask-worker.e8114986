@@ -1,0 +1,20 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.120.41.52:41297'
+distributed.worker - INFO -       Start worker at:   tcp://10.120.41.52:41389
+distributed.worker - INFO -          Listening to:   tcp://10.120.41.52:41389
+distributed.worker - INFO -          dashboard at:         10.120.41.52:33786
+distributed.worker - INFO - Waiting to connect to:   tcp://10.120.43.21:36332
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  180.00 GB
+distributed.worker - INFO -       Local Directory: /home/ad/alberta/dask-worker-space/worker-ad4pn1ss
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://10.120.43.21:36332
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.utils_perf - INFO - full garbage collection released 16.77 MB from 1032 reference cycles (threshold: 10.00 MB)
+distributed.dask_worker - INFO - Exiting on signal 15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.120.41.52:41297'
+distributed.nanny - INFO - Worker process 84262 was killed by signal 15
+/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 1 leaked semaphores to clean up at shutdown
+  len(cache))
+distributed.dask_worker - INFO - End worker
