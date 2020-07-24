@@ -114,7 +114,7 @@ The results are :
     </tbody>
 </table>
 
-The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. The selection of the chunks happens when building the zarr archive or when opening the netcdf files. We have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480). The second archive is chunked only on the time dimension (1x4729x8354). Two operations will be performed with theses 2archives : a temporal mean and a spatial mean. They will be computed on HAL cluster with 20 workers and a toatl of 3.6TB.
+The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. The selection of the chunks happens when building the zarr archive or when opening the netcdf files. We have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480, 110MB). The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. They will be computed on HAL cluster with 20 workers and a total of 3.6TB.
 
 The results are :
 
@@ -130,19 +130,20 @@ The results are :
     <tbody>
         <tr>
              <td>240x240x480</td>
-             <td></td>
-             <td></td>
-             <td></td>
+             <td>90ms</td>
+             <td>4min52 (41761 Tasks)</td>
+             <td>4min17(41602 Tasks)</td>
         </tr>
         <tr>
             <td>1x4729x8354</td>
-            <td>179ms</td>
-            <td>14min7s</td>
-            <td></td>
+            <td>158ms</td>
+            <td>14min39s (27275 Tasks)</td>
+            <td>4min53 (35065 Tasks)</td>
         </tr>
     </tbody>
 </table>
 
+The temporal mean of data that is chunked along the time dimension only takes more three times more time that when the data is chunked also along x and y dimensions. The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).
 ## The tests
 
 First, the opening of the zarr on the different deployments will be timed. The comparison with the opening of the same data in form of netcdf files will be done where the data are available in the two formats (zarr and netcdf), ie on occigen and hal. (see Table 1 & 2)
