@@ -167,6 +167,33 @@ Three parameters seem to have an impact on the performation of computation : the
 I want to compare the deployments along this 3 parameters :
   - results for a given number of workers are presented in Table 1 (2 workers, 20 workers)
   - results for a given size of memory are presented in Table 2 (8GB, 1TB)
+  - results for a given number of cores, same memory on HAL : 
+  
+  <table>
+    <thead>
+        <tr>
+            <th>Number of workers</th>
+            <th>Number of cores</th>
+            <th>Memory</th>
+            <th>Temporal mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>20</td>
+             <td>20</td>
+             <td>184GB</td>
+             <td>5min07</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>20</td>
+            <td>184GB</td>
+            <td>5min58</td>
+        </tr>
+    </tbody>
+</table>
+
 
 I also want to investigate the scalability of the deployments by increasing workers or memory :
   - results for occigen
