@@ -1,8 +1,11 @@
-# Performance tests on various pangeo deployments
+# Benchmarking the french HPC PANGEO deployments
 
-This repo gathers the results of some performance tests done with PANGEO ecosystem deployed on several machine.
+This repo gathers the results of some performance tests done with PANGEO ecosystem deployed on several machines.
+
 The idea is to compare the machines on one simple computation that involves a lot of data.
-I also want to know if every machine is scalable : more workers => computation faster ?
+
+I also want to know if every machine is scalable : more workers/memory/cores => computation faster ?
+
 Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will be briefly investigated.
 
 ## Description of Pangeo deployments
@@ -66,7 +69,7 @@ Several nodes are available by submitting a job first, then launching jupyter no
       
 So depending on the number of workers asked, the adequate queue will be selected.
 
-## The data
+## The data and the test
 
 The exact same dataset has been uploaded in every PANGEO deployment : the sea surface height in the North Atlantic 
 region simulated by NEMO between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH. 
@@ -75,7 +78,7 @@ The dataset is a zarr archive, is 621GB big (due to compression since original d
 
 The zarr archive have been constructed from multiple netcdf4 daily files with this script.
 
-The netcdf files are also available on some PANGEO deployment : Occigen and HAL. On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
+The netcdf daily files are also available on some PANGEO deployments : Occigen and HAL. On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
 
 The results are :
 
@@ -114,7 +117,17 @@ The results are :
     </tbody>
 </table>
 
-The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. The selection of the chunks happens when building the zarr archive or when opening the netcdf files. We have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480, 110MB). The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. They will be computed on HAL cluster with 20 workers and a total of 3.6TB.
+The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
+
+The selection of the chunks happens when building the zarr archive or when opening the netcdf files. 
+
+I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480, 110MB). 
+
+The second archive is chunked only on the time dimension (1x4729x8354, 158MB). 
+
+Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. 
+
+They will be computed on HAL cluster with 20 workers and a total of 3.6TB.
 
 The results are :
 
@@ -143,73 +156,32 @@ The results are :
     </tbody>
 </table>
 
-The temporal mean of data that is chunked along the time dimension only takes more three times more time that when the data is chunked also along x and y dimensions. The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).
-## The tests
+The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions. 
 
-First, the opening of the zarr on the different deployments will be timed. The comparison with the opening of the same data in form of netcdf files will be done where the data are available in the two formats (zarr and netcdf), ie on occigen and hal. (see Table 1 & 2)
+The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).
 
-Then, the time-mean over the whole period will be computed on every platforms using 2, 4, 10 and 20 workers when possible, to compare performance between deployments but also the scalability on each machine. (see Table 3 to X)
-
-For the machine with different computation nodes, several tests will be made. (see Table XX to Y)
-
-Last, the same computation will be done using all the workers of one node or the same number of workers on several nodes when possible, ie on hal and occigen. (see Table YY to Z)
 
 To garantee the robustness of the test, the exact same python configuration will be deployed, it is described in the [conda environment.yml](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) file.
 
+## Results of the tests
+
+Three parameters seem to have an impact on the performation of computation : the number of workers, the number of cores and the memory available.
+
+I want to compare the deployments along this 3 parameters :
+  - results for a given number of workers are presented in Table 1 (2 workers, 20 workers)
+  - results for a given size of memory are presented in Table 2 (8GB, 1TB)
+  
+I also want to investigate the scalability of the deployments by increasing workers or memory :
+  - results for occigen
+  - results for hal
+  - results for jean-zay
+  - results for gricad
+  
+I finally investigate the difference between requesting my workers on one single node or on several one, results :
 
 
-## Results
 
-- Table 1 : Opening the 621Go zarr archive containing 1.85TB of data.
-
-<table>
-    <thead>
-        <tr>
-            <th>Machine</th>
-            <th>File System</th>
-            <th>Timing</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-             <td>Personnal Computer</td>
-             <td></td>
-             <td>(1.47+1.43)/2s</td>
-        </tr>
-        <tr>
-            <td>Cluster cal1</td>
-            <td></td>
-            <td>260ms</td>
-        </tr>
-        <tr>
-            <td>Cluster dahu GRICAD</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>HPC hal CNES</td>
-            <td></td>
-            <td>279ms+124ms</td>
-        </tr>
-        <tr>
-            <td>HPC occigen CINES</td>
-            <td></td>
-            <td>(2.29+2.11)/2s</td>
-        </tr>
-        <tr>
-            <td>HPC jean-zay IDRIS</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>PANGEO cloud</td>
-            <td></td>
-            <td>(3.23+1.27+1.77+2.35+2.23+2.13)/6</td>
-        </tr>
-    </tbody>
-</table>
-
-- Table 3 : Computation of temporal mean with 2 workers
+- Table 1 : Computation of temporal mean with 2 workers
 
 <table>
     <thead>
@@ -306,7 +278,7 @@ To garantee the robustness of the test, the exact same python configuration will
      </tbody>
 </table>
 
-- Table 4 : Computation of temporal mean with 4 workers
+- Table 2 : Computation of temporal mean with 4 workers
 
 <table>
     <thead>
@@ -397,7 +369,7 @@ To garantee the robustness of the test, the exact same python configuration will
     </tbody>
 </table>
 
-- Table 5 : Computation of temporal mean with 10 workers
+- Table 3 : Computation of temporal mean with 10 workers
 
 <table>
     <thead>
@@ -482,7 +454,7 @@ To garantee the robustness of the test, the exact same python configuration will
     </tbody>
 </table>
 
-- Table 6 : Computation of temporal mean with 20 workers
+- Table 4 : Computation of temporal mean with 20 workers
 
 <table>
     <thead>
