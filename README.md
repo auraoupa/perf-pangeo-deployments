@@ -8,11 +8,19 @@ I also want to know if every machine is scalable : more workers/memory/cores => 
 
 Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will be briefly investigated.
 
+## What is a PANGEO deployment
+
+A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fiels of research and industry. There are no PANGEO library or module but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostic.
+
+A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of jupyter notebook server according to the machine : it can be a simple browser or a virtual distributed server.
+
 ## Description of Pangeo deployments
 
 Every deployment has its own characteristics regarding the filesystem, the processors available for computation and the way we can access them.
 
-The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with Intel Xeon Processors with 4 cores. The data are accessible through a sshfs mounting (data lives on a local server)
+The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with Intel Xeon Processors with 4 cores. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser in which I can make the test that will be described later.
+
+At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server.
 
   - Dell personnal computer : Processeur Intel Xeon with 4 cores
   - [IGE](http://www.ige-grenoble.fr/) team-size computing server cal1 : 2 Inte(R)Xeon(R) CPUs with 16 cores (32 in total), with a restriction to 2 cores and 2GB per user on Virtual Machine jupytr (where jupyterhub is deployed)
