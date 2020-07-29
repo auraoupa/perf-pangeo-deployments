@@ -1,0 +1,364 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.120.40.90:43614'
+distributed.worker - INFO -       Start worker at:   tcp://10.120.40.90:34080
+distributed.worker - INFO -          Listening to:   tcp://10.120.40.90:34080
+distributed.worker - INFO -          dashboard at:         10.120.40.90:39339
+distributed.worker - INFO - Waiting to connect to:   tcp://10.120.43.21:37658
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                    8.00 GB
+distributed.worker - INFO -       Local Directory: /home/ad/alberta/dask-worker-space/worker-urg2iah9
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://10.120.43.21:37658
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.40s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 8.89s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.42s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 8.57s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.09s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 10.18s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.06s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.34s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 9.90s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.43s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 8.38s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 316.00 MB from 441 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.09s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.20s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOLoop object at 0x2b671480b160>>, <Task finished coro=<Worker.memory_monitor() done, defined at /home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py:2611> exception=OSError(122, 'Disk quota exceeded')>)
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 767, in _discard_future_result
+    future.result()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2681, in memory_monitor
+    k, v, weight = self.data.fast.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.core - INFO - Event loop was unresponsive in Worker for 7.54s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - ERROR - "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6772, 0, 0)"
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2511, in execute
+    data[k] = self.data[k]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 80, in __getitem__
+    raise KeyError(key)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6772, 0, 0)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2515, in execute
+    data[k] = Actor(type(self.actors[k]), self.address, k, self)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6772, 0, 0)"
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOLoop object at 0x2b671480b160>>, <Task finished coro=<Worker.execute() done, defined at /home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py:2494> exception=KeyError("('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6772, 0, 0)",)>)
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2511, in execute
+    data[k] = self.data[k]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 80, in __getitem__
+    raise KeyError(key)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6772, 0, 0)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 767, in _discard_future_result
+    future.result()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2515, in execute
+    data[k] = Actor(type(self.actors[k]), self.address, k, self)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6772, 0, 0)"
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.19s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.06s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.81s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - ERROR - [Errno 122] Disk quota exceeded
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2511, in execute
+    data[k] = self.data[k]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 78, in __getitem__
+    return self.slow_to_fast(key)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 69, in slow_to_fast
+    self.fast[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 70, in __setitem__
+    self.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOLoop object at 0x2b671480b160>>, <Task finished coro=<Worker.execute() done, defined at /home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py:2494> exception=OSError(122, 'Disk quota exceeded')>)
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 767, in _discard_future_result
+    future.result()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2511, in execute
+    data[k] = self.data[k]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 78, in __getitem__
+    return self.slow_to_fast(key)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 69, in slow_to_fast
+    self.fast[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 70, in __setitem__
+    self.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.core - INFO - Event loop was unresponsive in Worker for 16.77s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - ERROR - "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6813, 0, 0)"
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2511, in execute
+    data[k] = self.data[k]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 80, in __getitem__
+    raise KeyError(key)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6813, 0, 0)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2515, in execute
+    data[k] = Actor(type(self.actors[k]), self.address, k, self)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6813, 0, 0)"
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOLoop object at 0x2b671480b160>>, <Task finished coro=<Worker.execute() done, defined at /home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py:2494> exception=KeyError("('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6813, 0, 0)",)>)
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2511, in execute
+    data[k] = self.data[k]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 80, in __getitem__
+    raise KeyError(key)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6813, 0, 0)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 767, in _discard_future_result
+    future.result()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2515, in execute
+    data[k] = Actor(type(self.actors[k]), self.address, k, self)
+KeyError: "('mean_chunk-705ae4561aedfa9dd1f357afd8c62a05', 6813, 0, 0)"
+distributed.worker - INFO - Failed to put key in memory
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1698, in transition_executing_done
+    self.put_key_in_memory(key, value, transition=False)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1921, in put_key_in_memory
+    self.data[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 87, in __setitem__
+    self.fast[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 70, in __setitem__
+    self.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.02s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.nanny - WARNING - Worker exceeded 95% memory budget. Restarting
+distributed.nanny - INFO - Worker process 25836 was killed by signal 15
+/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 1 leaked semaphores to clean up at shutdown
+  len(cache))
+distributed.nanny - WARNING - Restarting worker
+distributed.worker - INFO -       Start worker at:   tcp://10.120.40.90:38421
+distributed.worker - INFO -          Listening to:   tcp://10.120.40.90:38421
+distributed.worker - INFO -          dashboard at:         10.120.40.90:42997
+distributed.worker - INFO - Waiting to connect to:   tcp://10.120.43.21:37658
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                    8.00 GB
+distributed.worker - INFO -       Local Directory: /home/ad/alberta/dask-worker-space/worker-ctj89ika
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://10.120.43.21:37658
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.99s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 7.40s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.92s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.16s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.24s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 18.87s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.35s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.39s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.77s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.97s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.68s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.88s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.44s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.47s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.05s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.52s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.93s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 7.13s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.53s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.42s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.44s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.95s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.36s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.26s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.91s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 315.99 MB from 483 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.01s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.38s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.08s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 17.94s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 15.22s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.44s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 9.23s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOLoop object at 0x2b97c57a9160>>, <Task finished coro=<Worker.memory_monitor() done, defined at /home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py:2611> exception=OSError(122, 'Disk quota exceeded')>)
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 767, in _discard_future_result
+    future.result()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 2681, in memory_monitor
+    k, v, weight = self.data.fast.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.47s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 6.40s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - ERROR - 
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1392, in add_task
+    assert key in self.data or key in self.actors
+AssertionError
+distributed.core - ERROR - 
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/core.py", line 520, in handle_stream
+    handler(**merge(extra, msg))
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1392, in add_task
+    assert key in self.data or key in self.actors
+AssertionError
+distributed.worker - ERROR - 
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 915, in handle_scheduler
+    comm, every_cycle=[self.ensure_communicating, self.ensure_computing]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/core.py", line 520, in handle_stream
+    handler(**merge(extra, msg))
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1392, in add_task
+    assert key in self.data or key in self.actors
+AssertionError
+distributed.worker - INFO - Connection to scheduler broken.  Reconnecting...
+tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOLoop object at 0x2b97c57a9160>>, <Task finished coro=<Worker.handle_scheduler() done, defined at /home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py:912> exception=AssertionError()>)
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/tornado/ioloop.py", line 767, in _discard_future_result
+    future.result()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 915, in handle_scheduler
+    comm, every_cycle=[self.ensure_communicating, self.ensure_computing]
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/core.py", line 520, in handle_stream
+    handler(**merge(extra, msg))
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1392, in add_task
+    assert key in self.data or key in self.actors
+AssertionError
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.11s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.67s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.99s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Failed to put key in memory
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1698, in transition_executing_done
+    self.put_key_in_memory(key, value, transition=False)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1921, in put_key_in_memory
+    self.data[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 87, in __setitem__
+    self.fast[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 70, in __setitem__
+    self.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.worker - INFO - Comm closed
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.18s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Failed to put key in memory
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1698, in transition_executing_done
+    self.put_key_in_memory(key, value, transition=False)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1921, in put_key_in_memory
+    self.data[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 87, in __setitem__
+    self.fast[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 70, in __setitem__
+    self.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.worker - INFO - Comm closed
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.93s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Failed to put key in memory
+Traceback (most recent call last):
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1698, in transition_executing_done
+    self.put_key_in_memory(key, value, transition=False)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/distributed/worker.py", line 1921, in put_key_in_memory
+    self.data[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 87, in __setitem__
+    self.fast[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 70, in __setitem__
+    self.evict()
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/lru.py", line 89, in evict
+    cb(k, v)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/buffer.py", line 60, in fast_to_slow
+    self.slow[key] = value
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/func.py", line 41, in __setitem__
+    self.d[key] = self.dump(value)
+  File "/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/site-packages/zict/file.py", line 84, in __setitem__
+    f.write(value)
+OSError: [Errno 122] Disk quota exceeded
+distributed.worker - INFO - Comm closed
+distributed.worker - INFO - Comm closed
+distributed.dask_worker - INFO - Exiting on signal 15
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.120.40.90:43614'
+/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 6 leaked semaphores to clean up at shutdown
+  len(cache))
+/home/ad/alberta/.conda/envs/perf-pangeo/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 1 leaked semaphores to clean up at shutdown
+  len(cache))

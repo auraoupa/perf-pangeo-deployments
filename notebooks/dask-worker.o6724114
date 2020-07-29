@@ -1,0 +1,21 @@
+[PROLOGUE] Starting prologue on node node089 at date Tue Jun  9 14:47:39 UTC 2020
+[PROLOGUE] Ending prologue on node node089 at date Tue Jun  9 14:47:39 UTC 2020
+[EPILOGUE] Starting epilogue on node node089 at date Tue Jun  9 15:43:43 UTC 2020
+
+------------ JOB INFO 6724114.admin01 -------------
+
+JOBID		: 6724114.admin01
+USER		: alberta
+GROUP		: swot_aval_oc
+JOB NAME	: dask-worker
+SESSION		: 18456
+RES REQSTED	: ncpus=1,mem=7630mb,walltime=04:00:00,place=free
+RES USED	: cpupercent=87,cput=00:50:03,ncpus=1,vmem=7813120kb,mem=7813120kb,walltime=00:56:03
+BILLING         : 00:56:03 (ncpus x walltime)
+QUEUE		: qt72h
+ACCOUNT		: PerfTestPangeo
+JOB EXIT CODE	: 271
+
+------------ END JOB INFO 6724114.admin01 ---------
+
+[EPILOGUE] Ending epilogue on node node089 at date Tue Jun  9 15:43:43 UTC 2020
