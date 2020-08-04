@@ -156,7 +156,7 @@ The results are :
 
 At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server. The physical machine behind has 2 Inte(R)Xeon(R) CPUs with 16 cores.
 
-There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there.
+***There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there, so more than twice slower than on my personnal computer.***
 
 ### GRICAD cluster DAHU (GRICAD)
 
@@ -301,6 +301,8 @@ Results are :
 </table>
 
 ***We can see ...***
+
+I want to try also requesting several node of each type, to compare the results with HPC deployments that are described later.
       
   - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
   
