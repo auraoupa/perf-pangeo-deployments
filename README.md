@@ -168,6 +168,78 @@ Three types of nodes are available and differ by the number of cores (16 [gold62
 
 I will first try to replicate the PC and CAL1 performances by selecting 8 cores and 33,66GB of memeory and 2 cores and 8,39GB of memory respectively, on the 2 nodes.
 
+Results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Node type</th>
+            <th>Workers</th>
+            <th>Cores</th>
+            <th>Memory</th>
+            <th>Timing of computation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>Gold5218</td>
+             <td>2</td>
+             <td>2</td>
+             <td>201,35GB</td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6126</td>
+             <td>2</td>
+             <td>2</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6130</td>
+             <td>2</td>
+             <td>2</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6244</td>
+             <td>2</td>
+             <td>2</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold5218</td>
+             <td>8</td>
+             <td>8</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6126</td>
+             <td>8</td>
+             <td>8</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6130</td>
+             <td>8</td>
+             <td>8</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6244</td>
+             <td>8</td>
+             <td>8</td>
+             <td></td>
+             <td></td>
+        </tr>
+    </tbody>
+</table>
+
 - [GRICAD] intensive computing cluster 
   
 Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
