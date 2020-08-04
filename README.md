@@ -63,17 +63,17 @@ The results are :
     </tbody>
 </table>
 
-The zarr format allows a faster opening and computation on the two machines, the computation is not even possible on the occigen machine
+The zarr format clearly allows a faster opening and computation on the two machines, the computation is not even completed on the occigen machine.
 
 The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
 
 The selection of the chunks happens when building the zarr archive or when opening the netcdf files. 
 
-I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480, 110MB). 
+I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a final chunk size of roughly hundreds of MB (240x240x480, 110MB). 
 
 The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. 
 
-They will be computed on HAL cluster with 20 workers and a total of 3.6TB.
+They will be computed on HAL cluster with 20 workers/cores and a total of 3.6TB of memory.
 
 The results are :
 
@@ -111,7 +111,43 @@ The spatial mean is not impacted because in the two cases, the time dimension is
 
 Every deployment has its own characteristics regarding the filesystem, the processors available for computation and the way we can access them.
 
-The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with Intel Xeon Processors with 4 cores. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser in which I can make the test that will be described later.
+The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with 2 Intel Xeon Processors with 4 cores and a total of 33,66 GB memory. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser.
+
+On this very simple PANGEO deployment, I made several tests by varying the number of workers, the number of cores and size of memory being fixed.
+
+The results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Workers</th>
+            <th>Cores</th>
+            <th>Memory</th>
+            <th>Timing of computation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>2</td>
+             <td>8</td>
+             <td>33,66GB</td>
+             <td>1h50</td>
+        </tr>
+         <tr>
+             <td>4</td>
+             <td>8</td>
+             <td>33,66GB</td>
+             <td>1h49</td>
+        </tr>
+         <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>33,66GB</td>
+             <td></td>
+        </tr>
+    </tbody>
+</table>
+
 
 At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server.
 
