@@ -162,7 +162,11 @@ There is no possible variation of the key parameters on this deployment, so the 
 
 On a regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers teh access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
 
+To run a jupyter notebook, I first have to submit a job to request the ressource I need, then a tunnel is put in place to run the notebook in a local browser.
 
+Three types of nodes are available and differ by the number of cores (16 [gold6244], 24 [gold6126] or 32 [gold6130]), they all have 192GB of memory.
+
+I will first try to replicate the PC and CAL1 performances by selecting 8 cores and 33,66GB of memeory and 2 cores and 8,39GB of memory respectively, on the 2 nodes.
 
 - [GRICAD] intensive computing cluster 
   
