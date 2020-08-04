@@ -111,7 +111,7 @@ The results are :
 
 Every deployment has its own characteristics regarding the filesystem, the processors available for computation and the way we can access them.
 
-### Personnal computer
+### Personnal computer (PC)
 
 The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with 2 Intel Xeon Processors with 4 cores and a total of 33,66 GB memory. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser.
 
@@ -152,13 +152,13 @@ The results are :
 
 ***The number of workers does not seem to be a relevant parameter as the performance are really similar with 2, 4 or 8 workers.***
 
-### MEOM jupyterhub
+### MEOM jupyterhub (CAL1)
 
 At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server. The physical machine behind has 2 Inte(R)Xeon(R) CPUs with 16 cores.
 
 There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there.
 
-### GRICAD cluster DAHU
+### GRICAD cluster DAHU (GRICAD)
 
 On a regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers teh access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
 
@@ -177,6 +177,7 @@ Results are :
             <th>Workers</th>
             <th>Cores</th>
             <th>Memory</th>
+            <th>Timing of opening dataset</th>
             <th>Timing of computation</th>
         </tr>
     </thead>
@@ -187,11 +188,13 @@ Results are :
              <td>2</td>
              <td>201,35GB</td>
              <td></td>
+             <td></td>
         </tr>
         <tr>
              <td>Gold6126</td>
              <td>2</td>
              <td>2</td>
+             <td></td>
              <td></td>
              <td></td>
         </tr>
@@ -201,6 +204,7 @@ Results are :
              <td>2</td>
              <td></td>
              <td></td>
+             <td></td>
         </tr>
         <tr>
              <td>Gold6244</td>
@@ -208,7 +212,8 @@ Results are :
              <td>2</td>
              <td></td>
              <td></td>
-        </tr>
+             <td></td>
+       </tr>
         <tr>
              <td>Gold5218</td>
              <td>8</td>
@@ -229,6 +234,7 @@ Results are :
              <td>8</td>
              <td></td>
              <td></td>
+             <td></td>
         </tr>
         <tr>
              <td>Gold6244</td>
@@ -236,13 +242,65 @@ Results are :
              <td>8</td>
              <td></td>
              <td></td>
-        </tr>
+             <td></td>
+       </tr>
     </tbody>
 </table>
 
 ***We can see that the performance are better compared to PC and CAL1 but do not change much between nodes. Memory is a key parameter.***
 
+Now, I will look at the performances when using all the cores in one node, for every node type.
 
+Results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Node type</th>
+            <th>Workers</th>
+            <th>Cores</th>
+            <th>Memory</th>
+            <th>Timing of opening dataset</th>
+            <th>Timing of computation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>Gold5218</td>
+             <td>32</td>
+             <td>32</td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6126</td>
+             <td>24</td>
+             <td>24</td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6130</td>
+             <td>32</td>
+             <td>32</td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6244</td>
+             <td>16</td>
+             <td>16</td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+    </tbody>
+</table>
+
+***We can see ...***
       
   - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
   
