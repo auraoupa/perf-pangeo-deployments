@@ -42,7 +42,7 @@ The results are :
              <td rowspan="2" scope="rowgroup">Occigen</td>
              <td>netcdf</td>
              <td>9.78s</td>
-             <td>1/6 of dasks tasks in 1h30</td>
+             <td>not finished, 1/6 of dasks tasks in 1h30</td>
         </tr>
         <tr>
             <td>zarr</td>
@@ -63,7 +63,7 @@ The results are :
     </tbody>
 </table>
 
-***The zarr format clearly allows a faster opening and computation on the two machines, the computation is not even completed on the occigen machine, even when increasing number of workers and the memory.***
+***The zarr format clearly allows a faster opening and computation on the two machines. The computation with netcdf files can not even complete on the occigen machine, even when increasing number of workers and the memory.***
 
 The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
 
