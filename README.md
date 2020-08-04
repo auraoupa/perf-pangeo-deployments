@@ -117,7 +117,7 @@ Every deployment has its own characteristics regarding the filesystem, the proce
 
 The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with 2 Intel Xeon Processors with 4 cores and a total of 33,66 GB memory. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser.
 
-On this very simple PANGEO deployment, I made several tests by varying the number of workers, the number of cores and size of memory being fixed.
+On this very simple PANGEO deployment, I made several tests by varying the number of workers, the number of cores and size of memory remaining constant.
 
 The results are :
 
