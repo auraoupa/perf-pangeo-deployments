@@ -63,7 +63,7 @@ The results are :
     </tbody>
 </table>
 
-The zarr format clearly allows a faster opening and computation on the two machines, the computation is not even completed on the occigen machine.
+The zarr format clearly allows a faster opening and computation on the two machines, the computation is not even completed on the occigen machine, even when increasing number of workers and the memory.
 
 The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
 
@@ -111,6 +111,8 @@ The spatial mean is not impacted because in the two cases, the time dimension is
 
 Every deployment has its own characteristics regarding the filesystem, the processors available for computation and the way we can access them.
 
+### Personnal computer
+
 The more direct deployment is on a *personnal computer* : in my case, it is a Dell machine with 2 Intel Xeon Processors with 4 cores and a total of 33,66 GB memory. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser.
 
 On this very simple PANGEO deployment, I made several tests by varying the number of workers, the number of cores and size of memory being fixed.
@@ -131,29 +133,38 @@ The results are :
              <td>2</td>
              <td>8</td>
              <td>33,66GB</td>
-             <td>1h50</td>
+             <td>1h50 +/- </td>
         </tr>
          <tr>
              <td>4</td>
              <td>8</td>
              <td>33,66GB</td>
-             <td>1h49</td>
+             <td>1h49 +/- </td>
         </tr>
          <tr>
              <td>8</td>
              <td>8</td>
              <td>33,66GB</td>
-             <td></td>
+             <td> +/- </td>
         </tr>
     </tbody>
 </table>
 
+The number of workers does not seem to be a relevant parameter as the performance are really similar with, 2, 4 or 8 workers.
 
-At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server.
+### MEOM jupyterhub
 
-  - Dell personnal computer : Processeur Intel Xeon with 4 cores
-  - [IGE](http://www.ige-grenoble.fr/) team-size computing server cal1 : 2 Inte(R)Xeon(R) CPUs with 16 cores (32 in total), with a restriction to 2 cores and 2GB per user on Virtual Machine jupytr (where jupyterhub is deployed)
-  - [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) intensive computing cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
+At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server. The physical machine behind has 2 Inte(R)Xeon(R) CPUs with 16 cores.
+
+There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there.
+
+### GRICAD cluster DAHU
+
+On a regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers teh access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
+
+
+
+- [GRICAD] intensive computing cluster 
   
 Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
 
