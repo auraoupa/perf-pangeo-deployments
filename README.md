@@ -193,8 +193,8 @@ Results are :
              <td>2</td>
              <td>2</td>
              <td>201,35GB</td>
-             <td></td>
-             <td></td>
+             <td>1,97s</td>
+             <td>1h11</td>
         </tr>
         <tr>
              <td>Gold6126</td>
@@ -208,8 +208,8 @@ Results are :
              <td>Gold6130</td>
              <td>2</td>
              <td>2</td>
-             <td></td>
-             <td></td>
+             <td>201,19GB</td>
+             <td>579ms</td>
              <td></td>
         </tr>
         <tr>
