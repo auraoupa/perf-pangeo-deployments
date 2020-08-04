@@ -210,7 +210,7 @@ Results are :
              <td>2</td>
              <td>201,19GB</td>
              <td>579ms</td>
-             <td></td>
+             <td>1h05</td>
         </tr>
         <tr>
              <td>Gold6244</td>
