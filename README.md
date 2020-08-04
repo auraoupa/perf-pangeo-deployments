@@ -160,11 +160,11 @@ At the MEOM team level of the laboratory IGE, we have a virtual machine jupytr w
 
 ### GRICAD cluster DAHU (GRICAD)
 
-On a regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers teh access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
+On a regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers the access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
 
-To run a jupyter notebook, I first have to submit a job to request the ressource I need, then a ssh tunnel is set up to run the notebook in a local browser.
+To run a jupyter notebook, I first have to submit a job to request the ressources I need, then a ssh tunnel is set up to run the notebook in a local browser.
 
-Three types of nodes are available and differ by the number of cores (16 [gold6244], 24 [gold6126] or 32 [gold6130]), they all have 192GB of memory.
+Three types of nodes are available and differ by the number of cores (16 [gold6244], 24 [gold6126] or 32 [gold6130]), they all have 192GB of memory in total.
 
 I will first try to replicate the PC and CAL1 performances by selecting 8 cores and 2 cores on every node available.
 
