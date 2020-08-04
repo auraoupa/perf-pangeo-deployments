@@ -42,7 +42,7 @@ The results are :
              <td rowspan="2" scope="rowgroup">Occigen</td>
              <td>netcdf</td>
              <td>9.78s</td>
-             <td>not finished, 1/6 of dasks tasks in 1h30</td>
+             <td>Killed Workers</td>
         </tr>
         <tr>
             <td>zarr</td>
