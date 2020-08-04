@@ -200,8 +200,8 @@ Results are :
              <td>Gold6126</td>
              <td>2</td>
              <td>2</td>
-             <td></td>
-             <td></td>
+             <td>201,19GB</td>
+             <td>841ms</td>
              <td></td>
         </tr>
         <tr>
