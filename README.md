@@ -26,6 +26,10 @@ The dataset is a 621GB big zarr archive (due to compression since original data 
 
 The zarr archive have been constructed from multiple netcdf4 daily files with [this script](https://github.com/auraoupa/make-zarr-occigen/blob/master/script_fbriol.ipynb).
 
+The elementary test consists in computing the temporal mean over the whole period (16 months) for every grid point. It is a very common operation in oceanography as we want to compare the results of oceanic simulation with satellite observations for instance (see [here](https://github.com/ocean-next/demo-compare-ssh-eNATL60-AVISO) for a demo and a plot).
+
+Thanks to [xarray](http://xarray.pydata.org/en/stable/) and [dask](https://dask.org/) librairies (very important part of the PANGEO ecosystem), the computation is parallelized along each chunk of the dataset. The efficiency of the parallization should be a matter of how many workers/cores and memeory dask is dealing with.
+
 The netcdf daily files are also available on some machines : Occigen and HAL. In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
 
 The results are :
