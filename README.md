@@ -145,7 +145,7 @@ The results are :
              <td>8</td>
              <td>8</td>
              <td>33,66GB</td>
-             <td> +/- </td>
+             <td> 1h50 </td>
         </tr>
     </tbody>
 </table>
