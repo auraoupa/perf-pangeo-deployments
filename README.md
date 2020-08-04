@@ -22,6 +22,8 @@ It is the sea surface height in the North Atlantic region simulated by [NEMO oce
 
 The dataset is a 621GB big zarr archive (due to compression since original data is 1.85TB) and contains 17 641 individual files, 11688x8354x4729 points with a chunksize of 240x240x480 (110MB).
 
+![plot of file](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/enatl60-ssh-file-chunk.png)
+
 The zarr archive have been constructed from multiple netcdf4 daily files with [this script](https://github.com/auraoupa/make-zarr-occigen/blob/master/script_fbriol.ipynb).
 
 The netcdf daily files are also available on some machines : Occigen and HAL. In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
