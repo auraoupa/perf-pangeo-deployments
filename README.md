@@ -41,8 +41,8 @@ The results are :
         <tr>
              <td rowspan="2" scope="rowgroup">Occigen</td>
              <td>netcdf</td>
-             <td></td>
-             <td></td>
+             <td>9.78s</td>
+             <td>1/6 of dasks tasks in 1h30</td>
         </tr>
         <tr>
             <td>zarr</td>
@@ -63,7 +63,7 @@ The results are :
     </tbody>
 </table>
 
-The zarr format clearly allows a faster opening and computation on the two machines, the computation is not even completed on the occigen machine, even when increasing number of workers and the memory.
+***The zarr format clearly allows a faster opening and computation on the two machines, the computation is not even completed on the occigen machine, even when increasing number of workers and the memory.***
 
 The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
 
@@ -102,9 +102,9 @@ The results are :
     </tbody>
 </table>
 
-The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions. 
+***The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions.*** 
 
-The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).
+***The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).***
 
 
 ## Description of Pangeo deployments
@@ -150,7 +150,7 @@ The results are :
     </tbody>
 </table>
 
-The number of workers does not seem to be a relevant parameter as the performance are really similar with, 2, 4 or 8 workers.
+***The number of workers does not seem to be a relevant parameter as the performance are really similar with 2, 4 or 8 workers.***
 
 ### MEOM jupyterhub
 
