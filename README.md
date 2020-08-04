@@ -6,13 +6,106 @@ The idea is to compare the machines on one simple computation that involves a lo
 
 I also want to know if every machine is scalable : more workers/memory/cores => computation faster ?
 
-Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will be briefly investigated.
+Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will also be investigated.
 
 ## What is a PANGEO deployment
 
-A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fiels of research and industry. There are no PANGEO library or module but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostic.
+A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fields of research and industry. There are no PANGEO library or module per se but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostic adapted to the data size.
 
-A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of jupyter notebook server according to the machine : it can be a simple browser or a virtual distributed server.
+A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In this case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of jupyter notebook server according to the machine : it can be a simple browser or a virtual distributed server.
+
+## The data and the test
+
+The exact same dataset has been uploaded on every machine we want to test. 
+
+It is the sea surface height in the North Atlantic region simulated by [NEMO ocean model](https://www.nemo-ocean.eu/) between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH (see [this repo](https://github.com/ocean-next/eNATL60) for more informations on the simulation). 
+
+The dataset is a 621GB big zarr archive (due to compression since original data is 1.85TB) and contains 17 641 individual files, 11688x8354x4729 points with a chunksize of 240x240x480 (110MB).
+
+The zarr archive have been constructed from multiple netcdf4 daily files with [this script](https://github.com/auraoupa/make-zarr-occigen/blob/master/script_fbriol.ipynb).
+
+The netcdf daily files are also available on some machines : Occigen and HAL. In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
+
+The results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Deployment</th>
+            <th>Format</th>
+            <th>Opening</th>
+            <th>Computing mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td rowspan="2" scope="rowgroup">Occigen</td>
+             <td>netcdf</td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td>zarr</td>
+            <td>893ms</td>
+            <td>5min50</td>
+        </tr>
+        <tr>
+             <td rowspan="2" scope="rowgroup">HAL</td>
+             <td>netcdf</td>
+             <td>4.77s</td>
+             <td>>4h</td>  
+        </tr>
+        <tr>
+            <td>zarr</td>
+            <td>149ms</td>
+            <td>4min47</td>
+        </tr>
+    </tbody>
+</table>
+
+The zarr format allows a faster opening and computation on the two machines, the computation is not even possible on the occigen machine
+
+The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
+
+The selection of the chunks happens when building the zarr archive or when opening the netcdf files. 
+
+I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480, 110MB). 
+
+The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. 
+
+They will be computed on HAL cluster with 20 workers and a total of 3.6TB.
+
+The results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Chunksize</th>
+            <th>Opening</th>
+            <th>Computing temporal mean</th>
+            <th>Computing spatial mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>240x240x480</td>
+             <td>90ms</td>
+             <td>4min52 (41761 Tasks)</td>
+             <td>4min17(41602 Tasks)</td>
+        </tr>
+        <tr>
+            <td>1x4729x8354</td>
+            <td>158ms</td>
+            <td>14min39s (27275 Tasks)</td>
+            <td>4min53 (35065 Tasks)</td>
+        </tr>
+    </tbody>
+</table>
+
+The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions. 
+
+The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).
+
 
 ## Description of Pangeo deployments
 
@@ -76,97 +169,6 @@ Several nodes are available by submitting a job first, then launching jupyter no
       - large-12-16GB
       
 So depending on the number of workers asked, the adequate queue will be selected.
-
-## The data and the test
-
-To garantee the robustness of the test, the exact same python configuration will be deployed, it is described in the [conda environment.yml](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) file.
-
-The exact same dataset has been uploaded in every PANGEO deployment : the sea surface height in the North Atlantic 
-region simulated by NEMO between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH. 
-
-The dataset is a zarr archive, is 621GB big (due to compression since original data is 1.85TB) and contains 17 641 individual files, contains 11688x8354x4729 points with a chunksize of 240x240x480 (110MB).
-
-The zarr archive have been constructed from multiple netcdf4 daily files with this script.
-
-The netcdf daily files are also available on some PANGEO deployment : Occigen and HAL. On these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
-
-The results are :
-
-<table>
-    <thead>
-        <tr>
-            <th>Deployment</th>
-            <th>Format</th>
-            <th>Opening</th>
-            <th>Computing mean</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-             <td rowspan="2" scope="rowgroup">Occigen</td>
-             <td>netcdf</td>
-             <td></td>
-             <td></td>
-        </tr>
-        <tr>
-            <td>zarr</td>
-            <td>893ms</td>
-            <td>5min50</td>
-        </tr>
-        <tr>
-             <td rowspan="2" scope="rowgroup">HAL</td>
-             <td>netcdf</td>
-             <td>4.77s</td>
-             <td>>4h</td>  
-        </tr>
-        <tr>
-            <td>zarr</td>
-            <td>149ms</td>
-            <td>4min47</td>
-        </tr>
-    </tbody>
-</table>
-
-The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
-
-The selection of the chunks happens when building the zarr archive or when opening the netcdf files. 
-
-I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a chunk of roughly hundreds of MB (240x240x480, 110MB). 
-
-The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. 
-
-They will be computed on HAL cluster with 20 workers and a total of 3.6TB.
-
-The results are :
-
-<table>
-    <thead>
-        <tr>
-            <th>Chunksize</th>
-            <th>Opening</th>
-            <th>Computing temporal mean</th>
-            <th>Computing spatial mean</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-             <td>240x240x480</td>
-             <td>90ms</td>
-             <td>4min52 (41761 Tasks)</td>
-             <td>4min17(41602 Tasks)</td>
-        </tr>
-        <tr>
-            <td>1x4729x8354</td>
-            <td>158ms</td>
-            <td>14min39s (27275 Tasks)</td>
-            <td>4min53 (35065 Tasks)</td>
-        </tr>
-    </tbody>
-</table>
-
-The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions. 
-
-The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).
 
 ## Results of the tests
 
