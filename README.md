@@ -231,8 +231,8 @@ Results are :
              <td>Gold6126</td>
              <td>8</td>
              <td>8</td>
-             <td></td>
-             <td></td>
+             <td>979ms</td>
+             <td>20mn</td>
         </tr>
         <tr>
              <td>Gold6130</td>
@@ -283,9 +283,9 @@ Results are :
              <td>Gold6126</td>
              <td>24</td>
              <td>24</td>
-             <td></td>
-             <td></td>
-             <td></td>
+             <td>201,39GB</td>
+             <td>3,33s</td>
+             <td>13mn</td>
         </tr>
         <tr>
              <td>Gold6130</td>
