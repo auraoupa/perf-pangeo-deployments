@@ -261,53 +261,49 @@ Results are :
              <td>Gold6126</td>
              <td>24</td>
              <td>24</td>
-             <td>201,39GB</td>
-             <td>3,33s</td>
+             <td>201.39GB</td>
+             <td>3.33s</td>
              <td>13mn</td>
         </tr>
         <tr>
              <td>Gold6130</td>
              <td>32</td>
              <td>32</td>
-             <td>201,19GB</td>
-             <td>5,4s</td>
+             <td>201.19GB</td>
+             <td>5.4s</td>
              <td>10mn</td>
-        </tr>
-        <tr>
-             <td>Gold6126</td>
-             <td>48</td>
-             <td>48</td>
-             <td></td>
-             <td></td>
-             <td></td>
         </tr>
         <tr>
              <td>Gold6130</td>
              <td>64</td>
              <td>64</td>
-             <td></td>
-             <td></td>
-             <td></td>
+             <td>201.19GB</td>
+             <td>2.1s</td>
+             <td>10mn</td>
         </tr>
     </tbody>
 </table>
 
-***We can see ...***
+***We can see there is a difference of performance when increasing the number of cores, the memory size remaining constant but it reaches a threshold of 10mn even when doubling the number of cores. It is strange noting that the memory did not increase when asking for more cores than the number of cores in one node, I would have assumed it would have doubled when asking for 64 cores (=2 nodes).***
 
-I want to try also requesting several node of each type, to compare the results with HPC deployments that are described later.
-      
-  - [CNES](https://cnes.fr/fr/) intensive computing cluster hal
-  
- A lot of nodes are accessible via dask-jobqueue (a job is submitted) :
+### CNES cluster HAL (HAL)
+
+Hal is the [CNES](https://cnes.fr/fr/) intermediate size HPC cluster, with about 460 nodes, 12 000 cores and a 8.5 PB Spectrum Scale Storage. Nodes and storage are interconnected with Infiniband at 56GB/s, and the storage system provides a bandwith up to 100GB/s [ref](https://www.researchgate.net/publication/340169325_The_Pangeo_Ecosystem_Interactive_Computing_Tools_for_the_Geosciences_Benchmarking_on_HPC). 
+
+Everyone with an account on this cluster can access the Jupyterhub service directly on the web : https://jupyterhub.cnes.fr/. The connection to the service will automatically launch a job on one computation node on which the jupyter notebook will be deployed (several choices for the spawning : from 1 core-4GB-12h to 40 cores-184 GB-12h)
+
+Once the notebook is running, I can also request more computation ressources by submitting job via [dask-jobqueue](https://jobqueue.dask.org/en/latest/) library that is part of PANGEO deployment and was developped for that exact purpose.
+
+A large variety of nodes is present in this cluster, so that I can make the key parameters (cores/workers/memory) vary at will :
  
-      - Qdev-1core-4GB-12H
-      - Qdev-4cores-15GB-12h
+      - Qdev-1core-4GB
+      - Qdev-4cores-15GB
       - Qdevfullnode-16cores-60GB
-      - Batch-1core-5GB-12h
-      - Batch-1core-5GB-72h
-      - Batch-4cores-20GB-12h
-      - Batchfullnodes-24cores-120GB-12h
-      - Batch2019fullnodes-40cores-184GB-12h
+      - Batch-1core-5GB
+      - Batch-1core-5GB
+      - Batch-4cores-20GB
+      - Batchfullnodes-24cores-120GB
+      - Batch2019fullnodes-40cores-184GB
       
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
