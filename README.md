@@ -332,7 +332,7 @@ Results are :
              <td>8</td>
              <td>8</td>
              <td>32GB</td>
-             <td></td>
+             <td>12min</td>
         </tr>
          <tr>
              <td>8</td>
@@ -355,7 +355,82 @@ Results are :
     </tbody>
 </table>
 
-***We will make the comparison between all deployments in the next section***
+***We will plot and comment the comparison between all deployments in the next section***
+
+Then, I will gradually increase the number of cores and/or the memory to describe the scalability on HAL.
+
+<table>
+    <thead>
+        <tr>
+            <th>Workers</th>
+            <th>Cores</th>
+            <th>Memory</th>
+            <th>Timing of computation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>8GB</td>
+             <td>45min</td>
+        </tr>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>30GB</td>
+             <td>48min</td>
+        </tr>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>GB</td>
+             <td></td>
+        </tr>
+       <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>120GB</td>
+             <td>45min</td>
+        </tr>
+        <tr>
+             <td>4</td>
+             <td>4</td>
+             <td>80GB</td>
+             <td>24min</td>
+        </tr>
+        <tr>
+             <td>4</td>
+             <td>4</td>
+             <td>240GB</td>
+             <td>22min</td>
+        </tr>
+        <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>32GB</td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>24</td>
+             <td>24</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>32</td>
+             <td>32</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+    </tbody>
+</table>
 
 On HAL, we have the possiblity to ask for 1 core on several nodes or several cores in 1 node. We can also specify how much memory, so we can make vary either the number of workers or the memory, the other 2 parameters being fixed.
 
