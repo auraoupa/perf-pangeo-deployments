@@ -326,7 +326,7 @@ Results are :
              <td>2</td>
              <td>2</td>
              <td>8GB</td>
-             <td>45</td>
+             <td>45min</td>
         </tr>
          <tr>
              <td>8</td>
