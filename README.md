@@ -224,6 +224,7 @@ Results are :
              <td>Gold5218</td>
              <td>8</td>
              <td>8</td>
+             <td>201,35GB</td>
              <td>759ms</td>
              <td>21mn</td>
         </tr>
@@ -231,6 +232,7 @@ Results are :
              <td>Gold6126</td>
              <td>8</td>
              <td>8</td>
+             <td>201,19GB</td>
              <td>979ms</td>
              <td>20mn</td>
         </tr>
@@ -238,9 +240,9 @@ Results are :
              <td>Gold6130</td>
              <td>8</td>
              <td>8</td>
-             <td></td>
-             <td></td>
-             <td></td>
+             <td>201,19GB</td>
+             <td>2.64s</td>
+             <td>27min</td>
         </tr>
         <tr>
              <td>Gold6244</td>
