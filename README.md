@@ -170,7 +170,7 @@ At the regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Gre
 
 To run a jupyter notebook, I first have to submit a job to request the ressources I need, then a ssh tunnel is set up to run the notebook in a local browser.
 
-Three types of nodes are available and differ by the number of cores (16 [gold6244], 24 [gold6126] or 32 [gold6130]), they all have 192GB of memory in total.
+Three types of nodes are available and differ by the number of cores (24 [gold6126] or 32 [gold6130|gold5218]), they theoretically all have 192GB of memory in total.
 
 I will first try to replicate the PC and CAL1 performances by selecting 8 cores and 2 cores on every node available.
 
@@ -213,14 +213,6 @@ Results are :
              <td>1h05</td>
         </tr>
         <tr>
-             <td>Gold6244</td>
-             <td>2</td>
-             <td>2</td>
-             <td></td>
-             <td></td>
-             <td></td>
-       </tr>
-        <tr>
              <td>Gold5218</td>
              <td>8</td>
              <td>8</td>
@@ -244,20 +236,12 @@ Results are :
              <td>2.64s</td>
              <td>27min</td>
         </tr>
-        <tr>
-             <td>Gold6244</td>
-             <td>8</td>
-             <td>8</td>
-             <td></td>
-             <td></td>
-             <td></td>
-       </tr>
     </tbody>
 </table>
 
 ***We can see that the performance are better compared to PC and CAL1 but do not change much between nodes. Memory is a key parameter.***
 
-Now, I will look at the performances when using all the cores in one node, for every node type.
+Now, I will look at the performances when using all the cores in one or mode node, for every node type when it is possible.
 
 Results are :
 
@@ -273,14 +257,6 @@ Results are :
         </tr>
     </thead>
     <tbody>
-        <tr>
-             <td>Gold5218</td>
-             <td>32</td>
-             <td>32</td>
-             <td></td>
-             <td></td>
-             <td></td>
-        </tr>
         <tr>
              <td>Gold6126</td>
              <td>24</td>
@@ -298,9 +274,17 @@ Results are :
              <td>10mn</td>
         </tr>
         <tr>
-             <td>Gold6244</td>
-             <td>16</td>
-             <td>16</td>
+             <td>Gold6126</td>
+             <td>48</td>
+             <td>48</td>
+             <td></td>
+             <td></td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>Gold6130</td>
+             <td>64</td>
+             <td>64</td>
              <td></td>
              <td></td>
              <td></td>
