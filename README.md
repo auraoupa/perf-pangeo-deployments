@@ -391,11 +391,12 @@ The results are :
             <td>20</td>
             <td>20</td>
             <td>184GB</td>
-            <td></td>
+            <td>5min52</td>
         </tr>
     </tbody>
 </table>  
 
+*** There is a 20% improvment of performance when asking for 20 nodes instead of 1 node, the number of cores and memory available being the same. The increase of number of workers does not change significantly the performance. ***
 
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
