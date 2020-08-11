@@ -288,22 +288,28 @@ Results are :
 
 ### CNES cluster HAL (HAL)
 
-Hal is the [CNES](https://cnes.fr/fr/) intermediate size HPC cluster, with about 460 nodes, 12 000 cores and a 8.5 PB Spectrum Scale Storage. Nodes and storage are interconnected with Infiniband at 56GB/s, and the storage system provides a bandwith up to 100GB/s [ref](https://www.researchgate.net/publication/340169325_The_Pangeo_Ecosystem_Interactive_Computing_Tools_for_the_Geosciences_Benchmarking_on_HPC). 
+Hal is the [CNES](https://cnes.fr/fr/) intermediate size HPC cluster, with about 460 nodes, 12 000 cores and a 8.5 PB Spectrum Scale Storage. Nodes and storage are interconnected with Infiniband at 56GB/s, and the storage system provides a bandwith up to 100GB/s ([ref](https://www.researchgate.net/publication/340169325_The_Pangeo_Ecosystem_Interactive_Computing_Tools_for_the_Geosciences_Benchmarking_on_HPC)). 
 
-Everyone with an account on this cluster can access the Jupyterhub service directly on the web : https://jupyterhub.cnes.fr/. The connection to the service will automatically launch a job on one computation node on which the jupyter notebook will be deployed (several choices for the spawning : from 1 core-4GB-12h to 40 cores-184 GB-12h)
+Everyone with an account on this cluster can access the Jupyterhub service directly on the web : https://jupyterhub.cnes.fr/. The connection to the service will automatically launch a job on one computation node on which the jupyter notebook will be deployed (several choices for the spawning : from 1 core-4GB-12h to 40 cores-184GB-12h)
 
 Once the notebook is running, I can also request more computation ressources by submitting job via [dask-jobqueue](https://jobqueue.dask.org/en/latest/) library that is part of PANGEO deployment and was developped for that exact purpose.
 
 A large variety of nodes is present in this cluster, so that I can make the key parameters (cores/workers/memory) vary at will :
  
-      - Qdev-1core-4GB
-      - Qdev-4cores-15GB
-      - Qdevfullnode-16cores-60GB
-      - Batch-1core-5GB
-      - Batch-1core-5GB
-      - Batch-4cores-20GB
-      - Batchfullnodes-24cores-120GB
-      - Batch2019fullnodes-40cores-184GB
+      - Qdev-1core(4GB) = Qdev1
+      - Qdev-4cores-(5GB) = Qdev4
+      - Qdevfullnode-16cores(60GB) = Qfull
+      - Batch-1core(5GB) = Batch1
+      - Batch-4cores(20GB) = Batch4
+      - Batchfullnodes-24cores(120GB) = Bfull
+      - Batch2019fullnodes-40cores(184GB) = B2019
+
+I will first request the same amount of cores and memory than for the previous deployment.
+     
+Two possibilities : I can ask 2 nodes on the Qdev1 queue (2 cores in total) or 2 cores in Qdev4 or Qfull among the 4 or 16 available, what will change is the memory.
+
+
+The results are : 
       
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
