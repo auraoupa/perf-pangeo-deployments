@@ -373,13 +373,6 @@ The results are :
     </thead>
     <tbody>
         <tr>
-             <td>20</td>
-             <td>20</td>
-             <td>20</td>
-             <td>184GB</td>
-             <td>5min07</td>
-        </tr>
-        <tr>
             <td>1</td>
             <td>5</td>
             <td>20</td>
@@ -393,10 +386,17 @@ The results are :
             <td>184GB</td>
             <td>5min52</td>
         </tr>
+        <tr>
+             <td>20</td>
+             <td>20</td>
+             <td>20</td>
+             <td>184GB</td>
+             <td>5min07</td>
+        </tr>
     </tbody>
 </table>  
 
-*** There is a 20% improvment of performance when asking for 20 nodes instead of 1 node, the number of cores and memory available being the same. The increase of number of workers does not change significantly the performance. ***
+***There is a 20% improvment of performance when asking for 20 nodes instead of 1 node, the number of cores and memory available being the same. The increase of number of workers does not change significantly the performance.***
 
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
