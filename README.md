@@ -1,34 +1,34 @@
 # Benchmarking the french HPC PANGEO deployments
 
-This repo gathers the results of some performance tests done with PANGEO ecosystem deployed on several machine.
+This repo gathers the results of some performance tests done with PANGEO ecosystem deployed on several machines.
 
 The idea is to compare the machines on one simple computation that involves a lot of data.
 
-I also want to know if every machine is scalable : more workers/memory/cores => computation faster ?
+I also want to know if every machine is scalable : does more workers/memory/cores mean the computation goes faster ?
 
 Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will also be investigated.
 
 ## What is a PANGEO deployment
 
-A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fields of research and industry. There are no PANGEO library or module per se but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostic adapted to the data size.
+A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fields of research and industry. There are no PANGEO library or module per se but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostics adapted to the data size.
 
-A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In this case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of jupyter notebook server according to the machine : it can be a simple browser or a virtual distributed server.
+A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of jupyter notebook server according to the machine : it can be a simple browser or a virtual distributed server.
 
 ## The data and the test
 
-The exact same dataset has been uploaded on every machine we want to test. 
+The exact same dataset has been uploaded on every machine I want to test. 
 
-It is the sea surface height in the North Atlantic region simulated by [NEMO ocean model](https://www.nemo-ocean.eu/) between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH (see [this repo](https://github.com/ocean-next/eNATL60) for more informations on the simulation). 
+It is the hourly sea surface height in the North Atlantic region simulated by [NEMO ocean model](https://www.nemo-ocean.eu/) between 2009, July the 1st and 2010, October the 1st, hereafter eNATL60-BLBT02-SSH (see [this repo](https://github.com/ocean-next/eNATL60) for more informations on the simulation). 
 
-The dataset is a 621GB big zarr archive (due to compression since original data is 1.85TB) and contains 17 641 individual files, 11688x8354x4729 points with a chunksize of 240x240x480 (110MB).
+The dataset is 1.85TB big compressed into a 621GB zarr archive and contains 17 641 individual files, 11688x8354x4729 grid points with a chunksize of 240x240x480 (110MB).
 
 ![plot of file](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/enatl60-ssh-file-chunk.png)
 
 The zarr archive have been constructed from multiple netcdf4 daily files with [this script](https://github.com/auraoupa/make-zarr-occigen/blob/master/script_fbriol.ipynb).
 
-The elementary test consists in computing the temporal mean over the whole period (16 months) for every grid point. It is a very common operation in oceanography as we want to compare the results of oceanic simulation with satellite observations for instance (see [here](https://github.com/ocean-next/demo-compare-ssh-eNATL60-AVISO) for a demo and a plot).
+The elementary test consists in computing the temporal mean over the whole period (16 months) for every grid point. It is a very common operation in oceanography when we want to compare the results of oceanic simulation with satellite observations for instance (see [here](https://github.com/ocean-next/demo-compare-ssh-eNATL60-AVISO) for a demo and a plot).
 
-Thanks to [xarray](http://xarray.pydata.org/en/stable/) and [dask](https://dask.org/) librairies (very important part of the PANGEO ecosystem), the computation is parallelized along each chunk of the dataset. The efficiency of the parallization should be a matter of how many workers/cores and memeory dask is dealing with.
+Thanks to [xarray](http://xarray.pydata.org/en/stable/) and [dask](https://dask.org/) librairies (very important part of the PANGEO ecosystem), the computation is parallelized along each chunk of the dataset. The efficiency of the parallization should be a matter of how many workers/cores and memory dask is dealing with.
 
 The netcdf daily files are also available on some machines : Occigen and HAL. In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
 
@@ -69,13 +69,13 @@ The results are :
     </tbody>
 </table>
 
-***The zarr format clearly allows a faster opening and computation on the two machines. The computation with netcdf files can not even complete on the occigen machine, even when increasing number of workers and the memory.***
+***The zarr format clearly allows a faster opening and computation on the two machines. The computation with netcdf files can not even complete on the occigen machine, even when increasing number of workers/cores and the memory.***
 
-The chunksize is also a very relevant parameter we need to tune before doing parallelized computation with dask and xarray. 
+The chunksize is also a very relevant parameter I need to tune before doing parallelized computation with dask and xarray. 
 
-The selection of the chunks happens when building the zarr archive or when opening the netcdf files. 
+The selection of the chunk size happens when building the zarr archive or when opening the netcdf files. 
 
-I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and chunksize along y dimension is chosen to have a final chunk size of roughly hundreds of MB (240x240x480, 110MB). 
+I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and the chunk size along y dimension is chosen in order to have a final chunk size of roughly hundreds of MB (240x240x480, 110MB). 
 
 The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. 
 
@@ -110,7 +110,7 @@ The results are :
 
 ***The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions.*** 
 
-***The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 pieces).***
+***The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 chunks).***
 
 
 ## Description of Pangeo deployments
@@ -119,7 +119,7 @@ Every deployment has its own characteristics regarding the filesystem, the proce
 
 ### Personnal computer (PC)
 
-The more direct deployment is on a personnal computer : in my case, it is a Dell machine with 2 Intel Xeon Processors with 4 cores and a total of 33,66 GB memory. The data are accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook on a firefox browser.
+The more direct deployment is on a personnal computer : in my case, it is a Dell machine with 2 Intel Xeon Processors with 4 cores and a total of 33,66 GB memory. The dataset is accessible through a sshfs mounting (data lives on a local server). I simply launch a jupyter notebook in a firefox browser.
 
 On this very simple PANGEO deployment, I made several tests by varying the number of workers, the number of cores and size of memory remaining constant.
 
@@ -160,13 +160,13 @@ The results are :
 
 ### MEOM jupyterhub (CAL1)
 
-At the [MEOM team](https://meom-group.github.io/) level of the [laboratory IGE](http://www.ige-grenoble.fr/), we have access to a virtual machine jupytr with jupyterhub that grants every user 2 cores and 2GB of memory for computation on data stored on the same server. The physical machine behind has 2 Inte(R)Xeon(R) CPUs with 16 cores.
+At the [MEOM team](https://meom-group.github.io/) level of the [laboratory IGE](http://www.ige-grenoble.fr/), we have access to a virtual machine jupytr with a jupyterhub server that grants every user 2 cores and 2GB of memory for computation on data stored on the same server. The physical machine behind has 2 Inte(R)Xeon(R) CPUs with 16 cores.
 
-***There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there, so more than twice slower than on my personnal computer.***
+***There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there, so more than twice slower than on a personnal computer.***
 
 ### GRICAD cluster DAHU (GRICAD)
 
-On a regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers the access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
+At the regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers the access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
 
 To run a jupyter notebook, I first have to submit a job to request the ressources I need, then a ssh tunnel is set up to run the notebook in a local browser.
 
