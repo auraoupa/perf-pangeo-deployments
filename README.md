@@ -77,7 +77,7 @@ The selection of the chunk size happens when building the zarr archive or when o
 
 I have made a test with two zarr archives : the first is chunked equally along time and x dimensions and the chunk size along y dimension is chosen in order to have a final chunk size of roughly hundreds of MB (240x240x480, 110MB). 
 
-The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with theses 2 archives : a temporal mean and a spatial mean. 
+The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with these 2 archives : a temporal mean and a spatial mean. 
 
 They will be computed on HAL cluster with 20 workers/cores and a total of 3.6TB of memory.
 
@@ -166,7 +166,7 @@ Exceptionnally, I was able to perform the test using 8.39GB.
 
 ***There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there, so more than twice slower than on a personnal computer.***
 
-### GRICAD cluster DAHU (GRICAD)
+### GRICAD cluster DAHU (DAHU)
 
 At the regional level, [GRICAD](https://gricad-doc.univ-grenoble-alpes.fr/) (Grenoble Alpes Recherche - Infrastructure de Calcul Intensif et de Données) offers the access to intensive computing ressources, among them the cluster [dahu](https://gricad-doc.univ-grenoble-alpes.fr/hpc/description/)
 
@@ -306,13 +306,97 @@ A large variety of nodes is present in this cluster, so that I can make the key 
       - Batchfullnodes-24cores(120GB) = Bfull
       - Batch2019fullnodes-40cores(184GB) = B2019
 
-I will first request the same amount of cores and memory than for the previous deployment.
-     
-Two possibilities when asking for 2 cores : I can ask 2 nodes on the Qdev1 queue (2 cores in total) or 2 cores in Qdev4 or Qfull among the 4 or 16 available, what will change is the memory.
+Dask-jobqueue allows the request in terms of workers/cores and memory, the job is then submitted to the according queue.
+
+I will first request the same amount of cores and memory than for the previous deployments (CAL, PC and DAHU)
+
+Results are :
+
+<table>
+    <thead>
+        <tr>
+            <th>Workers</th>
+            <th>Cores</th>
+            <th>Memory</th>
+            <th>Timing of computation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>8GB</td>
+             <td>45</td>
+        </tr>
+         <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>32GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>24</td>
+             <td>24</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>32</td>
+             <td>32</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+    </tbody>
+</table>
+
+***We will make the comparison between all deployments in the next section***
+
+On HAL, we have the possiblity to ask for 1 core on several nodes or several cores in 1 node. We can also specify how much memory, so we can make vary either the number of workers or the memory, the other 2 parameters being fixed.
+
+The results are :
+
+  <table>
+    <thead>
+        <tr>
+            <th>Number of nodes</th>
+            <th>Number of workers</th>
+            <th>Number of cores</th>
+            <th>Memory</th>
+            <th>Temporal mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>20</td>
+             <td>20</td>
+             <td>20</td>
+             <td>184GB</td>
+             <td>5min07</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>5</td>
+            <td>20</td>
+            <td>184GB</td>
+            <td>5min58</td>
+        </tr>
+       <tr>
+            <td>1</td>
+            <td>20</td>
+            <td>20</td>
+            <td>184GB</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>  
 
 
-The results are : 
-      
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
  4 types of nodes are accessible via dask-jobqueue (a job is submitted) :
@@ -345,7 +429,12 @@ The results are :
       
 So depending on the number of workers asked, the adequate queue will be selected.
 
-## Results of the tests
+## Compilation of the results
+
+First we will draw the results for all deployments with 2 cores :
+
+Then, with 8 cores :
+
 
 Three parameters seem to have an impact on the performation of computation : the number of workers, the number of cores and the memory available.
 
@@ -354,32 +443,7 @@ I want to compare the deployments along this 3 parameters :
   - results for a given size of memory are presented in Table 2 (8GB, 1TB)
   - results for a given number of cores, same memory on HAL : 
   
-  <table>
-    <thead>
-        <tr>
-            <th>Number of workers</th>
-            <th>Number of cores</th>
-            <th>Memory</th>
-            <th>Temporal mean</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-             <td>20</td>
-             <td>20</td>
-             <td>184GB</td>
-             <td>5min07</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>20</td>
-            <td>184GB</td>
-            <td>5min58</td>
-        </tr>
-    </tbody>
-</table>
-
-
+ 
 I also want to investigate the scalability of the deployments by increasing workers or memory :
   - results for occigen
   - results for hal
