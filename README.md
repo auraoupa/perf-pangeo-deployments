@@ -162,6 +162,8 @@ The results are :
 
 At the [MEOM team](https://meom-group.github.io/) level of the [laboratory IGE](http://www.ige-grenoble.fr/), we have access to a virtual machine jupytr with a jupyterhub server that grants every user 2 cores and 2GB of memory for computation on data stored on the same server. The physical machine behind has 2 Inte(R)Xeon(R) CPUs with 16 cores.
 
+Exceptionnally, I was able to perform the test using 8.39GB.
+
 ***There is no possible variation of the key parameters on this deployment, so the result will only be useful to compare to other deployments. It takes 3h41 +/- 23mn to compute the temporal mean there, so more than twice slower than on a personnal computer.***
 
 ### GRICAD cluster DAHU (GRICAD)
@@ -306,7 +308,7 @@ A large variety of nodes is present in this cluster, so that I can make the key 
 
 I will first request the same amount of cores and memory than for the previous deployment.
      
-Two possibilities : I can ask 2 nodes on the Qdev1 queue (2 cores in total) or 2 cores in Qdev4 or Qfull among the 4 or 16 available, what will change is the memory.
+Two possibilities when asking for 2 cores : I can ask 2 nodes on the Qdev1 queue (2 cores in total) or 2 cores in Qdev4 or Qfull among the 4 or 16 available, what will change is the memory.
 
 
 The results are : 
