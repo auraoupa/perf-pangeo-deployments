@@ -4,7 +4,7 @@ import time
 import dask
 
 ask_workers=2
-memory='60GB'
+memory='184GB'
 from dask_jobqueue import PBSCluster
 from dask.distributed import Client
 import dask.dataframe as dd
@@ -22,15 +22,18 @@ wk = c.scheduler_info()["workers"]
 
 text="Workers= " + str(len(wk))
 memory = [w["memory_limit"] for w in wk.values()]
+cores = sum(w["nthreads"] for w in wk.values())
+text += ", Cores=" + str(cores)
 if all(memory):
     text += ", Memory=" + format_bytes(sum(memory))
 print(text)
-#Workers= 2, 2 cores,Memory=120.00 GB
+#Workers= 2, Cores=2, Memory=368.00 GB
+
 %time ds=xr.open_zarr('/work/ALT/odatis/eNATL60/zarr/eNATL60-BLBT02-SSH-1h')
-#Wall time: 124 ms
+#44.4 ms
 %time mean=ds.sossheig.mean(dim='time_counter')
-#Wall time: 379 ms
+#195 ms
 %time mean.load()
-#Wall time: 45min 19s
+#45mn
 c.close()
 cluster.close()
