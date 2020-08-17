@@ -338,6 +338,12 @@ Results are :
              <td>8GB</td>
              <td>45min</td>
         </tr>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
          <tr>
              <td>8</td>
              <td>8</td>
@@ -348,7 +354,7 @@ Results are :
              <td>8</td>
              <td>8</td>
              <td>200GB</td>
-             <td></td>
+             <td>11min</td>
         </tr>
          <tr>
              <td>24</td>
@@ -359,13 +365,25 @@ Results are :
          <tr>
              <td>32</td>
              <td>32</td>
-             <td>200GB</td>
-             <td></td>
+             <td>192GB</td>
+             <td>3min24</td>
+        </tr>
+         <tr>
+             <td>64</td>
+             <td>64</td>
+             <td>192GB</td>
+             <td>2min2</td>
+        </tr>
+         <tr>
+             <td>128</td>
+             <td>128</td>
+             <td>192GB</td>
+             <td>3min10</td>
         </tr>
     </tbody>
 </table>
 
-***We will plot and comment the comparison between all deployments in the next section***
+***We will plot and comment the comparison between all deployments in the next section. We have a first idea of the scalability of HAL, with a fixed memory of 192GB : it is scaling well up to 64 cores.***
 
 Then, I will gradually increase the number of cores and/or the memory to describe the scalability on HAL.
 
