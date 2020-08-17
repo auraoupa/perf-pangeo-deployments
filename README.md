@@ -383,9 +383,13 @@ Results are :
     </tbody>
 </table>
 
-***We will plot and comment the comparison between all deployments in the next section. We have a first idea of the scalability of HAL, with a fixed memory of 192GB : it is scaling well up to 64 cores.***
+***We will plot and comment the comparison between all deployments in the next section.***
 
-Then, I will gradually increase the number of cores and/or the memory to describe the scalability on HAL.
+***We have a first idea of the scalability of HAL, when selectionning the results with a fixed memory of 192GB (plot below) : it is scaling well up to 64 cores.***
+
+![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal1.png)
+
+Then, I will gradually increase the number of cores and/or the memory to describe further the scalability on HAL.
 
 <table>
     <thead>
@@ -409,16 +413,22 @@ Then, I will gradually increase the number of cores and/or the memory to describ
              <td>30GB</td>
              <td>48min</td>
         </tr>
-        <tr>
-             <td>2</td>
-             <td>2</td>
-             <td>GB</td>
-             <td></td>
-        </tr>
        <tr>
              <td>2</td>
              <td>2</td>
              <td>120GB</td>
+             <td>45min</td>
+        </tr>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>368GB</td>
              <td>45min</td>
         </tr>
         <tr>
@@ -434,16 +444,28 @@ Then, I will gradually increase the number of cores and/or the memory to describ
              <td>22min</td>
         </tr>
         <tr>
+             <td>4</td>
+             <td>4</td>
+             <td>736GB</td>
+             <td>23min</td>
+       </tr>
+       <tr>
              <td>8</td>
              <td>8</td>
              <td>32GB</td>
-             <td></td>
+             <td>12min</td>
         </tr>
         <tr>
              <td>8</td>
              <td>8</td>
              <td>200GB</td>
-             <td></td>
+             <td>11min39</td>
+        </tr>
+        <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>GB</td>
+             <td>11min39</td>
         </tr>
          <tr>
              <td>24</td>
