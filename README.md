@@ -423,7 +423,7 @@ Then, I will gradually increase the number of cores and/or the memory to describ
              <td>2</td>
              <td>2</td>
              <td>200GB</td>
-             <td></td>
+             <td>48min</td>
         </tr>
         <tr>
              <td>2</td>
@@ -467,20 +467,10 @@ Then, I will gradually increase the number of cores and/or the memory to describ
              <td>1.47TB</td>
              <td>15min7</td>
         </tr>
-         <tr>
-             <td>24</td>
-             <td>24</td>
-             <td>192GB</td>
-             <td>4min19</td>
-        </tr>
-         <tr>
-             <td>32</td>
-             <td>32</td>
-             <td>192GB</td>
-             <td>3min24</td>
-        </tr>
-    </tbody>
 </table>
+![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal2.png)
+
+***We can see that increasing the memory size does not make the computation faster when using 2, 4 or 8 workers***
 
 On HAL, we have the possiblity to ask for 1 core on several nodes or several cores in 1 node. We can also specify how much memory, so we can make vary either the number of workers or the memory, the other 2 parameters being fixed.
 
@@ -522,6 +512,11 @@ The results are :
 </table>  
 
 ***There is a 20% improvment of performance when asking for 20 nodes instead of 1 node, the number of cores and memory available being the same. The increase of number of workers does not change significantly the performance.***
+
+So, lastly I want to have the best results by asking all the cores and memory of 10 nodes, testing the different type of nodes.
+
+The results are : 
+
 
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
