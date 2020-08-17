@@ -25,7 +25,7 @@ memory = [w["memory_limit"] for w in wk.values()]
 if all(memory):
     text += ", Memory=" + format_bytes(sum(memory))
 print(text)
-#Workers= 2, Memory=30.00 GB
+#Workers= 2, 2 cores, Memory=30.00 GB
 %time ds=xr.open_zarr('/work/ALT/odatis/eNATL60/zarr/eNATL60-BLBT02-SSH-1h')
 #87.9ms
 %time mean=ds.sossheig.mean(dim='time_counter')
