@@ -360,7 +360,7 @@ Results are :
              <td>24</td>
              <td>24</td>
              <td>200GB</td>
-             <td></td>
+             <td>4min19</td>
         </tr>
          <tr>
              <td>32</td>
