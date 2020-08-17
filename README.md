@@ -4,7 +4,7 @@ This repo gathers the results of some performance tests done with PANGEO ecosyst
 
 The idea is to compare the machines on one simple computation that involves a lot of data.
 
-I also want to know if every machine is scalable : does more workers/memory/cores mean the computation goes faster ?
+I also want to know if every machine is scalable : does more workers/memory/cores mean the computation goes faster and by how much ?
 
 Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will also be investigated.
 
@@ -12,7 +12,7 @@ Also the format of the data (multiple netcdf files or zarr archive), the impact 
 
 A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fields of research and industry. There are no PANGEO library or module per se but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostics adapted to the data size.
 
-A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of jupyter notebook server according to the machine : it can be a simple browser or a virtual distributed server.
+A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of a jupyter notebook server adapted to the machine : it can be a simple browser or a virtual distributed server.
 
 ## The data and the test
 
@@ -30,7 +30,7 @@ The elementary test consists in computing the temporal mean over the whole perio
 
 Thanks to [xarray](http://xarray.pydata.org/en/stable/) and [dask](https://dask.org/) librairies (very important part of the PANGEO ecosystem), the computation is parallelized along each chunk of the dataset. The efficiency of the parallization should be a matter of how many workers/cores and memory dask is dealing with.
 
-The netcdf daily files are also available on some machines : Occigen and HAL. In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and the computation of the time mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
+The netcdf daily files are also available on some machines : Occigen and HAL (see below for a description of these machines). In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and on the computation of the temporal mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
 
 The results are :
 
@@ -71,7 +71,7 @@ The results are :
 
 ***The zarr format clearly allows a faster opening and computation on the two machines. The computation with netcdf files can not even complete on the occigen machine, even when increasing number of workers/cores and the memory.***
 
-The chunksize is also a very relevant parameter I need to tune before doing parallelized computation with dask and xarray. 
+The chunksize is also a very relevant parameter that needs to be tuned before doing parallelized computation with dask and xarray. 
 
 The selection of the chunk size happens when building the zarr archive or when opening the netcdf files. 
 
@@ -108,7 +108,7 @@ The results are :
     </tbody>
 </table>
 
-***The temporal mean of data that is chunked along the time dimension only takes more than three times more time that when the data is chunked also along x and y dimensions.*** 
+***The temporal mean of data that is chunked along the time dimension only is three times slower than when the data is chunked also along x and y dimensions.*** 
 
 ***The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 chunks).***
 
@@ -241,7 +241,7 @@ Results are :
     </tbody>
 </table>
 
-***We can see that the performance are better compared to PC and CAL1 but do not change much between nodes. Memory is a key parameter.***
+***We can see that the performance are better compared to PC and CAL1 but do not change much between nodes. Memory seems to be a key parameter.***
 
 Now, I will look at the performances when using all the cores in one or mode node, for every node type when it is possible.
 
