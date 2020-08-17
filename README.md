@@ -464,20 +464,20 @@ Then, I will gradually increase the number of cores and/or the memory to describ
         <tr>
              <td>8</td>
              <td>8</td>
-             <td>GB</td>
-             <td>11min39</td>
+             <td>1.47TB</td>
+             <td>15min7</td>
         </tr>
          <tr>
              <td>24</td>
              <td>24</td>
-             <td>200GB</td>
-             <td></td>
+             <td>192GB</td>
+             <td>4min19</td>
         </tr>
          <tr>
              <td>32</td>
              <td>32</td>
-             <td>200GB</td>
-             <td></td>
+             <td>192GB</td>
+             <td>3min24</td>
         </tr>
     </tbody>
 </table>
