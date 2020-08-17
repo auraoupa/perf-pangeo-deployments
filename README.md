@@ -281,12 +281,20 @@ Results are :
              <td>64</td>
              <td>201.19GB</td>
              <td>2.1s</td>
-             <td>10mn</td>
+             <td>9min53 +/- 11s</td>
+        </tr>
+        <tr>
+             <td>Gold6130</td>
+             <td>128</td>
+             <td>128</td>
+             <td>201.19GB</td>
+             <td>2.1s</td>
+             <td></td>
         </tr>
     </tbody>
 </table>
 
-***We can see there is a difference of performance when increasing the number of cores, the memory size remaining constant but it reaches a threshold of 10mn even when doubling the number of cores. It is strange noting that the memory did not increase when asking for more cores than the number of cores in one node, I would have assumed it would have doubled when asking for 64 cores (=2 nodes).***
+***We can see there is a difference of performance when increasing the number of cores, the memory size remaining constant but it reaches a threshold of 10mn even when doubling the number of cores. It is strange noting that the memory did not increase when asking for more cores than the number of cores in one node, I would have assumed it would have doubled when asking for 64 cores (=2 nodes) [x4 for 128 cores].***
 
 ### CNES cluster HAL (HAL)
 
