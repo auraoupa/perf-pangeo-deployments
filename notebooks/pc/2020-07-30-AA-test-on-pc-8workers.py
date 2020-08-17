@@ -32,7 +32,8 @@ print(text)
 # # The data
 
 %time ds=xr.open_zarr('/mnt/alberta/equipes/IGE/meom/workdir/albert/eNATL60/zarr/eNATL60-BLBT02-SSH-1h')
+#1,69s-1,47s-716ms
 mean=ds.sossheig.mean(dim='time_counter')
 %time mean.load()
-
+#1h50-1h51-1h50
 cluster.close()
