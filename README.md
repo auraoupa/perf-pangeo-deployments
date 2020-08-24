@@ -513,9 +513,149 @@ The results are :
 
 ***There is a 20% improvment of performance when asking for 20 nodes instead of 1 node, the number of cores and memory available being the same. The increase of number of workers does not change significantly the performance.***
 
-So, lastly I want to have the best results by asking all the cores and memory of 10 nodes, testing the different type of nodes.
+So, lastly I want to have the best results by asking all the cores and memory of 5, 10 and 20 nodes, testing the different type of nodes.
 
 The results are : 
+
+  <table>
+    <thead>
+        <tr>
+            <th>Number of nodes</th>
+            <th>Number of workers</th>
+            <th>Number of cores</th>
+            <th>Memory</th>
+            <th>Temporal mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>25GB</td>
+            <td>1203s</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>20</td>
+            <td>20</td>
+            <td>25GB</td>
+            <td>304s</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>20</td>
+            <td>20</td>
+            <td>100GB</td>
+            <td>300s</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>20</td>
+            <td>80</td>
+            <td>300GB</td>
+            <td>119s</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>30</td>
+            <td>120</td>
+            <td>600GB</td>
+            <td>113s</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>40</td>
+            <td>200</td>
+            <td>920GB</td>
+            <td>106s</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>50GB</td>
+            <td>664s</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>40</td>
+            <td>40</td>
+            <td>50GB</td>
+            <td>179s</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>40</td>
+            <td>40</td>
+            <td>200GB</td>
+            <td>192s</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>40</td>
+            <td>160</td>
+            <td>600GB</td>
+            <td>98s</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>60</td>
+            <td>240</td>
+            <td>1200GB</td>
+            <td>93s</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>80</td>
+            <td>400</td>
+            <td>1840GB</td>
+            <td>96s</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>100GB</td>
+            <td>355+/-31s</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>80</td>
+            <td>80</td>
+            <td>100GB</td>
+            <td>1116s</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>80</td>
+            <td>80</td>
+            <td>400GB</td>
+            <td>146s</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>80</td>
+            <td>320</td>
+            <td>1200GB</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>120</td>
+            <td>480</td>
+            <td>2400GB</td>
+            <td>117s</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td></td>
+            <td></td>
+            <td>GB</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>  
 
 
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
