@@ -647,13 +647,6 @@ The results are :
             <td>2400GB</td>
             <td>117s</td>
         </tr>
-        <tr>
-            <td>20</td>
-            <td></td>
-            <td></td>
-            <td>GB</td>
-            <td></td>
-        </tr>
     </tbody>
 </table>  
 
