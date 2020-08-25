@@ -342,7 +342,7 @@ Results are :
              <td>2</td>
              <td>2</td>
              <td>200GB</td>
-             <td></td>
+             <td>48mn</td>
         </tr>
          <tr>
              <td>8</td>
