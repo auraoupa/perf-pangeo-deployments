@@ -520,6 +520,7 @@ The results are :
   <table>
     <thead>
         <tr>
+            <th>Node type</th>
             <th>Number of nodes</th>
             <th>Number of workers</th>
             <th>Number of cores</th>
@@ -529,6 +530,7 @@ The results are :
     </thead>
     <tbody>
         <tr>
+            <th>qdev1</th>
             <td>5</td>
             <td>5</td>
             <td>5</td>
@@ -536,6 +538,7 @@ The results are :
             <td>1203s</td>
         </tr>
         <tr>
+            <th>qdev4</th>
             <td>5</td>
             <td>20</td>
             <td>20</td>
@@ -543,6 +546,7 @@ The results are :
             <td>304s</td>
         </tr>
         <tr>
+            <th>batch4</th>
             <td>5</td>
             <td>20</td>
             <td>20</td>
@@ -550,6 +554,7 @@ The results are :
             <td>300s</td>
         </tr>
         <tr>
+            <th>qfull</th>
             <td>5</td>
             <td>20</td>
             <td>80</td>
@@ -557,6 +562,7 @@ The results are :
             <td>119s</td>
         </tr>
         <tr>
+            <th>bfull</th>
             <td>5</td>
             <td>30</td>
             <td>120</td>
@@ -564,6 +570,7 @@ The results are :
             <td>113s</td>
         </tr>
         <tr>
+            <th>b2019</th>
             <td>5</td>
             <td>40</td>
             <td>200</td>
@@ -571,6 +578,7 @@ The results are :
             <td>106s</td>
         </tr>
         <tr>
+            <th>qdev1</th>
             <td>10</td>
             <td>10</td>
             <td>10</td>
@@ -578,6 +586,7 @@ The results are :
             <td>664s</td>
         </tr>
         <tr>
+            <th>qdev4</th>
             <td>10</td>
             <td>40</td>
             <td>40</td>
@@ -585,6 +594,7 @@ The results are :
             <td>179s</td>
         </tr>
         <tr>
+            <th>batch4</th>
             <td>10</td>
             <td>40</td>
             <td>40</td>
@@ -592,6 +602,7 @@ The results are :
             <td>192s</td>
         </tr>
         <tr>
+            <th>qfull</th>
             <td>10</td>
             <td>40</td>
             <td>160</td>
@@ -599,6 +610,7 @@ The results are :
             <td>98s</td>
         </tr>
         <tr>
+            <th>bfull</th>
             <td>10</td>
             <td>60</td>
             <td>240</td>
@@ -606,6 +618,7 @@ The results are :
             <td>93s</td>
         </tr>
         <tr>
+            <th>b2019</th>
             <td>10</td>
             <td>80</td>
             <td>400</td>
@@ -613,6 +626,7 @@ The results are :
             <td>96s</td>
         </tr>
         <tr>
+            <th>qdev1</th>
             <td>20</td>
             <td>20</td>
             <td>20</td>
@@ -620,6 +634,7 @@ The results are :
             <td>355+/-31s</td>
         </tr>
         <tr>
+            <th>qdev4</th>
             <td>20</td>
             <td>80</td>
             <td>80</td>
@@ -627,6 +642,7 @@ The results are :
             <td>1116s</td>
         </tr>
         <tr>
+            <th>batch4</th>
             <td>20</td>
             <td>80</td>
             <td>80</td>
@@ -634,6 +650,7 @@ The results are :
             <td>146s</td>
         </tr>
         <tr>
+            <th>qfull</th>
             <td>20</td>
             <td>80</td>
             <td>320</td>
@@ -641,6 +658,7 @@ The results are :
             <td>100</td>
         </tr>
         <tr>
+            <th>bfull</th>
             <td>20</td>
             <td>120</td>
             <td>480</td>
