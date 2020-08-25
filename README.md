@@ -688,11 +688,11 @@ CINES (National Computing Center for Higher Education) is a French public instit
       - HSW24-24cores-128Go
       - BDW28-28cores-64Go
       
-There is also 4 nodes dedicated to visualization and pre/post processing (jupyter is running directly on one node) :
+There are also 4 nodes dedicated to visualization and pre/post processing (jupyter is running directly on one node) :
 
       - VISU-28cores-256Go-6h 
       
-We first try to replicate the set up of the other machines tested : 
+We first try to replicate the set up of the other machines tested so far :
        
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   
