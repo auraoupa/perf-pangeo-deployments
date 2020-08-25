@@ -679,17 +679,21 @@ The same plot is reproduced without the qdev1 results, for better readability.
 
 ***Qdev4 and Batch4 are also more scalable for the same reason. The best performance is however obtained with qfull, bfull and b2019 nodes with 10 nodes.***
 
-### Occigen
+### CINES HPC Occigen (OCC)
 
-  - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
-  
- 4 types of nodes are accessible via dask-jobqueue (a job is submitted) :
+CINES (National Computing Center for Higher Education) is a French public institution, located in Montpellier (south of France) and supervised by the French ministry for Higher Education and Research. It hosts advanced equipment including Occigen, a parallel bullx supercomputer, designed by the French company Bull. This supercomputer has a peak power of 2.1 Pflops (2 million billion operations per second). Designed on the basis of shared memory compute nodes interconnected via an InfiniBand network , it consists of 85824 core Intel Xeon ™ each with 2.5 GB of memory. A local storage capacity of 5 Po allows rapid access (106 GB/s) data ( /scratch ) managed by the parallel file system “Lustre”. 
+
+2 types of nodes are accessible via dask-jobqueue (a job is submitted) :
  
       - HSW24-24cores-128Go
       - BDW28-28cores-64Go
-      - VISU-28cores-256Go-6h (only 6 nodes)
-      - SkylakeGPU-224cores-3To (upon request)
       
+There is also 4 nodes dedicated to visualization and pre/post processing (jupyter is running directly on one node) :
+
+      - VISU-28cores-256Go-6h 
+      
+We first try to replicate the set up of the other machines tested : 
+       
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   
   Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
