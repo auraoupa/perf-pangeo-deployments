@@ -36,6 +36,6 @@ print(text)
 #136ms
 
 %time mean.load()
-#
+#48min45
 c.close()
 cluster.close()
