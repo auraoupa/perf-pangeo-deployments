@@ -639,7 +639,7 @@ The results are :
             <td>80</td>
             <td>80</td>
             <td>100GB</td>
-            <td>1116s</td>
+            <td>116s</td>
         </tr>
         <tr>
             <th>batch4</th>
