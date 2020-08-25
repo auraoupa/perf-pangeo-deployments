@@ -468,6 +468,7 @@ Then, I will gradually increase the number of cores and/or the memory to describ
              <td>15min7</td>
         </tr>
 </table>
+
 ![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal2.png)
 
 ***We can see that increasing the memory size does not make the computation faster when using 2, 4 or 8 workers***
@@ -668,6 +669,11 @@ The results are :
     </tbody>
 </table>  
 
+![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal3.png)
+
+![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal3b.png)
+
+***We can see that qdev1 seems more scalable than the other nodes, because the performance is very low with 5 nodes***
 
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
