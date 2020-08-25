@@ -671,9 +671,15 @@ The results are :
 
 ![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal3.png)
 
+***We can see that qdev1 seems more scalable than the other nodes, because the performance is very low with 5 nodes***
+
+The same plot is reproduced without the qdev1 results, for better readability.
+
 ![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal3b.png)
 
-***We can see that qdev1 seems more scalable than the other nodes, because the performance is very low with 5 nodes***
+***Qdev4 and Batch4 are also more scalable for the same reason. The best performance is however obtained with qfull, bfull and b2019 nodes with 10 nodes.***
+
+### Occigen
 
   - [CINES](https://www.cines.fr/) supercomputer [occigen](https://www.cines.fr/calcul/materiels/occigen/)
   
