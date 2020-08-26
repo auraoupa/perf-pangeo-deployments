@@ -693,6 +693,78 @@ There are also 4 nodes dedicated to visualization and pre/post processing (jupyt
       - VISU-28cores-256Go-6h 
       
 We first try to replicate the set up of the other machines tested so far :
+
+  <table>
+    <thead>
+        <tr>
+            <th>Node type</th>
+            <th>Number of nodes</th>
+            <th>Number of workers</th>
+            <th>Number of cores</th>
+            <th>Memory</th>
+            <th>Temporal mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>HSW24</th>
+            <td>5</td>
+            <td>140</td>
+            <td>140</td>
+            <td>600,60GB</td>
+            <td>75s</td>
+        </tr>
+        <tr>
+            <th>BDW28</th>
+            <td>5</td>
+            <td>140</td>
+            <td>140</td>
+            <td>299,60GB</td>
+            <td>77</td>
+        </tr>
+        <tr>
+            <th>HSW24</th>
+            <td>10</td>
+            <td>280</td>
+            <td>280</td>
+            <td>1200GB</td>
+            <td>52s</td>
+        </tr>
+        <tr>
+            <th>BDW28</th>
+            <td>10</td>
+            <td>280</td>
+            <td>280</td>
+            <td>599,20GB</td>
+            <td>48s</td>
+        </tr>
+        <tr>
+            <th>HSW24</th>
+            <td>20</td>
+            <td>560</td>
+            <td>560</td>
+            <td>2400GB</td>
+            <td>38s</td>
+        </tr>
+        <tr>
+            <th>BDW28</th>
+            <td>20</td>
+            <td>560</td>
+            <td>1120</td>
+            <td>1200GB</td>
+            <td>40s</td>
+        </tr>
+        <tr>
+            <th>VISU</th>
+            <td>1</td>
+            <td>8</td>
+            <td>56</td>
+            <td>270,19GB</td>
+            <td>350s</td>
+        </tr>
+
+    </tbody>
+</table>  
        
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   
