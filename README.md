@@ -765,7 +765,10 @@ We first try to replicate the set up of the other machines tested so far :
 
     </tbody>
 </table>  
-       
+     
+![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-hal3.png)
+
+
   - [IDRIS](http://www.idris.fr/info/missions.html) supercomputer [jean-zay](http://www.idris.fr/jean-zay/)
   
   Several nodes are available by submitting a job first, then launching jupyter notebook on the requested node :
