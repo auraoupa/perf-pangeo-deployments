@@ -755,8 +755,21 @@ We first try to replicate the set up of the other machines tested so far :
     </tbody>
 </table>
 
-Then the performances of occigen nodes are assessed by requesting 5, 10 or 20 entire nodes.
+We can now compare HAL and Occigen 
+ - to CAL1 :
+ 
+ ![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-2cores.png)
+ 
+ - to PC :
+ 
+  ![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-8cores.png)
 
+ - to GRICAD :
+ 
+  ![plot](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/figs/Perf-200GB.png)
+
+
+Then the performances of occigen nodes are assessed by requesting 5, 10 or 20 entire nodes.
 
   <table>
     <thead>
