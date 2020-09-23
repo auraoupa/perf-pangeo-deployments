@@ -694,6 +694,69 @@ There are also 4 nodes dedicated to visualization and pre/post processing (jupyt
       
 We first try to replicate the set up of the other machines tested so far :
 
+<table>
+    <thead>
+        <tr>
+            <th>Workers</th>
+            <th>Cores</th>
+            <th>Memory</th>
+            <th>Timing of computation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>8GB</td>
+             <td>58min</td>
+        </tr>
+        <tr>
+             <td>2</td>
+             <td>2</td>
+             <td>200GB</td>
+             <td>49mn</td>
+        </tr>
+         <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>32GB</td>
+             <td>13min</td>
+        </tr>
+         <tr>
+             <td>8</td>
+             <td>8</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>24</td>
+             <td>24</td>
+             <td>200GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>32</td>
+             <td>32</td>
+             <td>192GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>64</td>
+             <td>64</td>
+             <td>192GB</td>
+             <td></td>
+        </tr>
+         <tr>
+             <td>128</td>
+             <td>128</td>
+             <td>192GB</td>
+             <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
   <table>
     <thead>
         <tr>
@@ -762,7 +825,6 @@ We first try to replicate the set up of the other machines tested so far :
             <td>270,19GB</td>
             <td>350s</td>
         </tr>
-
     </tbody>
 </table>  
      
