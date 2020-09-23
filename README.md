@@ -726,35 +726,36 @@ We first try to replicate the set up of the other machines tested so far :
              <td>8</td>
              <td>8</td>
              <td>200GB</td>
-             <td></td>
+             <td>15min</td>
         </tr>
          <tr>
              <td>24</td>
              <td>24</td>
              <td>200GB</td>
-             <td></td>
+             <td>4min54</td>
         </tr>
          <tr>
              <td>32</td>
              <td>32</td>
              <td>192GB</td>
-             <td></td>
+             <td>3min46</td>
         </tr>
          <tr>
              <td>64</td>
              <td>64</td>
              <td>192GB</td>
-             <td></td>
+             <td>1min59</td>
         </tr>
          <tr>
              <td>128</td>
              <td>128</td>
              <td>192GB</td>
-             <td></td>
+             <td>1min10</td>
         </tr>
     </tbody>
 </table>
 
+Then the performances of occigen nodes are assessed by requesting 5, 10 or 20 entire nodes.
 
 
   <table>
