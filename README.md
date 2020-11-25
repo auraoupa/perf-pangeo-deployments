@@ -112,6 +112,7 @@ The results are :
 
 ***The spatial mean is not impacted because in the two cases, the time dimension is chunked (in 11688 or 48 chunks).***
 
+***My advice would therefore be to consider chunking along all dimensions of the dataset in order to be able to later compute more efficiently any operations involving any dimensions.***
 
 ## Description of Pangeo deployments
 
