@@ -79,7 +79,7 @@ I have made a test with two zarr archives : the first is chunked equally along t
 
 The second archive is chunked only on the time dimension (1x4729x8354, 158MB). Two operations will be performed with these 2 archives : a temporal mean and a spatial mean. 
 
-They will be computed on HAL cluster with 20 workers/cores and a total of 3.6TB of memory.
+They will be computed on HAL cluster with 20 workers and a total of 3.6TB of memory.
 
 The results are :
 
