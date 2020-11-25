@@ -30,7 +30,7 @@ The elementary test consists in computing the temporal mean over the whole perio
 
 Thanks to [xarray](http://xarray.pydata.org/en/stable/) and [dask](https://dask.org/) librairies (very important part of the PANGEO ecosystem), the computation is parallelized along each chunk of the dataset. The efficiency of the parallization should be a matter of how many workers/cores and memory dask is dealing with.
 
-The netcdf daily files are also available on some machines : Occigen and HAL (see below for a description of these machines). In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and on the computation of the temporal mean. The number of workers and cores is 20 for all the tests, and the available memory is 2.4TB for HSW24 and 3.6TB for HAL
+The netcdf daily files are also available on some machines : Occigen and HAL (see below for a description of these machines). In these 2 deployments I have tested the impact of the data format (netcdf or zarr) on the opening of the files and on the computation of the temporal mean. To make this test, I requested 20 workers, and 2.4TB on occigen and 3.6TB on HAL.
 
 The results are :
 
