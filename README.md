@@ -12,7 +12,16 @@ Also the format of the data (multiple netcdf files or zarr archive), the impact 
 
 A description of what is PANGEO is available here : https://pangeo.io/index.html, it is first of all a community of scientists, engineers and developpers that collaborate on dealing with big amount of data produced mainly in geoscience fields of research and industry. There are no PANGEO library or module per se but we call PANGEO software ecosystem an ensemble of open-source tools that put together will help the user produce scientific diagnostics adapted to the data size.
 
-A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda, in addition to the deployment of a jupyter notebook server adapted to the machine : it can be a simple browser or a virtual distributed server.
+A PANGEO deployment consists in the installation of a number of software on a machine, adapting some of the tools to the type of machine considered (HPC, cloud, personnal computer) In my case, the PANGEO deployment is described by [this list of python libraries](https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/conda/environment.yml) that I will install via conda.
+
+The 3 main ingredients are : [jupyter](https://jupyter.org/), [dask](https://dask.org/), [xarray](http://xarray.pydata.org/en/stable/). Jupyter is the interface between the user and the machine and its deployment will depend on which machine we are computing on : some jupyterhub server has already been deployed, otherwise a simple browser will be launched. Xarray will allow us to open the datasets (netcdf or zarr format), deal easily with metadata and apply any numpy method on the data. In combination with Dask, all the operations can be processed in parallel.
+
+## Dask lexicon
+
+ - cluster : the combination of a scheduler and some workers
+ - client : a python object that allows dask to know a cluster exists and to hand on to it the computation
+ - worker : (= process) computes tasks as directed by the scheduler and stores and serves the computed results
+ - core : (= thread) each worker has a nulber of cores defined when the cluster is built (threads_per_worker=x cores per worker)
 
 ## The data and the test
 
