@@ -21,7 +21,7 @@ The 3 main ingredients are : [jupyter](https://jupyter.org/), [dask](https://das
  - cluster : the combination of a scheduler and some workers
  - client : a python object that allows dask to know a cluster exists and to hand on to it the computation
  - worker : (= process) computes tasks as directed by the scheduler and stores and serves the computed results
- - core : (= thread) each worker has a nulber of cores defined when the cluster is built (threads_per_worker=x cores per worker)
+ - core : (= thread) each worker has a number of cores defined when the cluster is built (threads_per_worker=x cores per worker)
 
 ## The data and the test
 
