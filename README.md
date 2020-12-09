@@ -6,7 +6,7 @@ The idea is to compare the machines on one simple computation that involves a lo
 
 I also want to know if every machine is scalable : does more workers/memory/cores mean the computation goes faster and by how much ?
 
-Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type on the opening and the impact of the chunk size will also be investigated.
+Also the format of the data (multiple netcdf files or zarr archive), the impact of the filestystem type and of the chunk size will also be investigated.
 
 ## What is a PANGEO deployment
 
