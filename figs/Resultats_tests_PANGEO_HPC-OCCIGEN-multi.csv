@@ -1,0 +1,3 @@
+Queue,Nb Noeuds,Workers,Cores,Memory in GB,Resultat1 in sec,Resultat2 in sec,Resultat3 in sec
+VISU,1,8,56,270.19,358,365,367
+BDW28,1,28,56,59.92,317,317,317

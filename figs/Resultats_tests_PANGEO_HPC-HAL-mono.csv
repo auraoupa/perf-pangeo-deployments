@@ -1,0 +1,4 @@
+Queue,Nb Noeuds,Workers,Cores,Memory in GB,Resultat1 in sec,Resultat2 in sec,Resultat3 in sec
+qdev,1,16,16,64.42,1411,504,490
+qdev,2,32,32,120,744,420,300
+qt72h,1,40,40,197.57,523,405,468
