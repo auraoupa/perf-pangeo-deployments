@@ -1,0 +1,7 @@
+Queue,Nb Noeuds,Workers,Cores,Memory in GB,Resultat1 in sec,Resultat2 in sec,Resultat3 in sec
+cpu-p1,1,2,2,171.8,3143,3126,
+cpu-p1,1,7,28,161.06,284,284,284
+,1,8,40,161.06,292,293,291
+cpu-p1,2,10,80,161.06,195,187,185
+prepost,1,8,48,2200,257,255,257
+prepost,1,48,48,2200,234,234,234
