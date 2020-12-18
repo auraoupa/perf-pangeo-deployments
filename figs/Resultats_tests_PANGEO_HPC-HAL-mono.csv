@@ -1,4 +1,5 @@
 Queue,Nb Noeuds,Workers,Cores,Memory in GB,Resultat1 in sec,Resultat2 in sec,Resultat3 in sec
-qdev,1,16,16,64.42,1411,504,490
-qdev,2,32,32,120,744,420,300
-qt72h,1,40,40,197.57,523,405,468
+qdev,1,16,16,64.42,483,480,478
+qdev,2,32,32,120,262,265,257
+qt72h-2019,1,40,40,197.57,331,345,340
+qt72h,1,24,24,128.85,459,432,423

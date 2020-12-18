@@ -1,5 +1,6 @@
 Queue,Nb Noeuds,Workers,Cores,Memory in GB,Resultat1 in sec,Resultat2 in sec,Resultat3 in sec
 VISU,1,56,56,270.19,331,337,337
+VISU,1,28,28,270.19,397,400,390
 HSW24,1,28,28,120.12,388,377,356
 HSW24,2,56,56,240.24,201,208,215
 HSW24,4,112,112,480.48,107,108,107
