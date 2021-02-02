@@ -57,12 +57,12 @@ The results are :
              <td rowspan="2" scope="rowgroup">Occigen</td>
              <td>netcdf</td>
              <td>9.78s</td>
-             <td>Killed Workers</td>
+             <td>2h25</td>
         </tr>
         <tr>
             <td>zarr</td>
             <td>893ms</td>
-            <td>5min50</td>
+            <td>5min30</td>
         </tr>
         <tr>
              <td rowspan="2" scope="rowgroup">HAL</td>
