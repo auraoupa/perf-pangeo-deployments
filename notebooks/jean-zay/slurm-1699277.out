@@ -1,0 +1,21 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://130.84.132.29:34021'
+distributed.dashboard.proxy - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: pip install jupyter-server-proxy
+distributed.worker - INFO -       Start worker at:  tcp://130.84.132.29:35131
+distributed.worker - INFO -          Listening to:  tcp://130.84.132.29:35131
+distributed.worker - INFO -          dashboard at:        130.84.132.29:44447
+distributed.worker - INFO - Waiting to connect to:   tcp://10.159.0.146:34059
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                    1.50 TB
+distributed.worker - INFO -       Local Directory: /gpfsdswork/projects/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/worker-33vh6tbg
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://10.159.0.146:34059
+distributed.worker - INFO - Waiting to connect to:   tcp://10.159.0.146:34059
+distributed.worker - INFO - Waiting to connect to:   tcp://10.159.0.146:34059
+distributed.worker - INFO - Waiting to connect to:   tcp://10.159.0.146:34059
+distributed.worker - INFO - Waiting to connect to:   tcp://10.159.0.146:34059
+distributed.nanny - INFO - Closing Nanny at 'tcp://130.84.132.29:34021'
+distributed.worker - INFO - Stopping worker at tcp://130.84.132.29:35131
+distributed.worker - INFO - Closed worker has not yet started: None
+distributed.dask_worker - INFO - Timed out starting worker
+distributed.dask_worker - INFO - End worker

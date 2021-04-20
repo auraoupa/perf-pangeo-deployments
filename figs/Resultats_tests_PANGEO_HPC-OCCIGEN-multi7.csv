@@ -1,0 +1,2 @@
+Queue,Nb Noeuds,Workers,Cores,Memory in GB,Resultat1 in sec,Resultat2 in sec,Resultat3 in sec
+VISU,1,8,56,270.19,358,365,367

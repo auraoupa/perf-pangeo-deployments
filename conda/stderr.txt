@@ -1,0 +1,485 @@
+[D 17:31:35.268 NotebookApp] Searching ['/gpfsdswork/projects/rech/egi/rote001/git/perf-pangeo-deployments/conda', '/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter', '/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files
+[D 17:31:35.269 NotebookApp] Looking for jupyter_config in /etc/jupyter
+[D 17:31:35.269 NotebookApp] Looking for jupyter_config in /usr/local/etc/jupyter
+[D 17:31:35.269 NotebookApp] Looking for jupyter_config in /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter
+[D 17:31:35.270 NotebookApp] Looking for jupyter_config in /gpfs7kw/linkhome/rech/genige01/rote001/.jupyter
+[D 17:31:35.270 NotebookApp] Looking for jupyter_config in /gpfsdswork/projects/rech/egi/rote001/git/perf-pangeo-deployments/conda
+[D 17:31:35.271 NotebookApp] Looking for jupyter_notebook_config in /etc/jupyter
+[D 17:31:35.271 NotebookApp] Looking for jupyter_notebook_config in /usr/local/etc/jupyter
+[D 17:31:35.271 NotebookApp] Looking for jupyter_notebook_config in /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter
+[D 17:31:35.271 NotebookApp] Looking for jupyter_notebook_config in /gpfs7kw/linkhome/rech/genige01/rote001/.jupyter
+[D 17:31:35.272 NotebookApp] Loaded config file: /gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/jupyter_notebook_config.py
+[D 17:31:35.272 NotebookApp] Loaded config file: /gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/jupyter_notebook_config.json
+[D 17:31:35.272 NotebookApp] Looking for jupyter_notebook_config in /gpfsdswork/projects/rech/egi/rote001/git/perf-pangeo-deployments/conda
+[D 17:31:35.294 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/etc/jupyter/jupyter_notebook_config.json
+[D 17:31:35.295 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/usr/local/etc/jupyter/jupyter_notebook_config.json
+[D 17:31:35.295 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/jupyter_notebook_config.json
+[D 17:31:35.295 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/jupyter_notebook_config.json
+[I 17:31:36.900 NotebookApp] Serving notebooks from local directory: /gpfswork/rech/egi/rote001
+[I 17:31:36.900 NotebookApp] Jupyter Notebook 6.1.5 is running at:
+[I 17:31:36.900 NotebookApp] https://jean-zay-pp1:8005/jean-zay-pp1_8005/
+[I 17:31:36.900 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 17:31:55.476 NotebookApp] 302 GET /jean-zay-pp1_8005/ (10.148.0.38) 6.69ms
+[I 17:31:55.544 NotebookApp] 302 GET /jean-zay-pp1_8005/tree? (10.148.0.38) 0.53ms
+[D 17:31:55.607 NotebookApp] Using contents: services/contents
+[D 17:31:55.639 NotebookApp] Path base/images/favicon.ico served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/base/images/favicon.ico
+[D 17:31:55.649 NotebookApp] Path components/jquery-ui/themes/smoothness/jquery-ui.min.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css
+[D 17:31:55.653 NotebookApp] Path components/jquery-typeahead/dist/jquery.typeahead.min.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/jquery-typeahead/dist/jquery.typeahead.min.css
+[D 17:31:55.657 NotebookApp] Path style/style.min.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/style/style.min.css
+[D 17:31:55.662 NotebookApp] Path auth/css/override.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/auth/css/override.css
+[D 17:31:55.665 NotebookApp] Path components/es6-promise/promise.min.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/es6-promise/promise.min.js
+[D 17:31:55.675 NotebookApp] Path components/react/react.production.min.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/react/react.production.min.js
+[D 17:31:55.677 NotebookApp] Path components/react/react-dom.production.min.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/react/react-dom.production.min.js
+[D 17:31:55.682 NotebookApp] Path components/create-react-class/index.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/create-react-class/index.js
+[D 17:31:55.685 NotebookApp] Path components/requirejs/require.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/requirejs/require.js
+[D 17:31:55.688 NotebookApp] Path base/images/logo.png served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/base/images/logo.png
+[D 17:31:55.690 NotebookApp] 200 GET /jean-zay-pp1_8005/login?next=%2Fjean-zay-pp1_8005%2Ftree%3F (10.148.0.38) 83.38ms
+[D 17:31:55.817 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=fb45616eef2c454960f91fcd2a04efeda84cfacccf0c5d741ba2793dc1dbd6d3ab01aaae6485222945774c7d7a9a2e9fb87e0d8ef1ea96893aa6906147a371bb (10.148.0.38) 1.19ms
+[D 17:31:55.824 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 0.63ms
+[D 17:31:56.081 NotebookApp] 200 GET /jean-zay-pp1_8005/static/style/style.min.css?v=56dfd556850eb17b7998c6828467598a322b41593edc758739c66cb2c3fea98f23d0dd8bf8b9b0f5d67bb976a50e4c34f789fe640cbb440fa089e1bf5ec170bd (10.148.0.38) 14.44ms
+[D 17:31:56.284 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 0.91ms
+[D 17:31:56.467 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 1.33ms
+[D 17:31:56.473 NotebookApp] 200 GET /jean-zay-pp1_8005/static/auth/css/override.css?v=7d24c52c4d63c7ed3ca286c051f232acd6a5ee3ed2aa32f56bea22ef20a2e3d184a638aad5602a39e8d5ef9a66ed93fdbaf80cf979948a947bab117618bd6486 (10.148.0.38) 0.60ms
+[D 17:31:57.338 NotebookApp] Path custom.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/custom/custom.css
+[D 17:31:57.339 NotebookApp] 200 GET /jean-zay-pp1_8005/custom/custom.css (10.148.0.38) 3.80ms
+[D 17:31:57.471 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 0.94ms
+[D 17:31:57.481 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 0.80ms
+[D 17:31:57.488 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 1.05ms
+[D 17:31:58.156 NotebookApp] 200 GET /jean-zay-pp1_8005/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 0.90ms
+[D 17:31:58.161 NotebookApp] Path auth/js/main.min.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/auth/js/main.min.js
+[D 17:31:58.164 NotebookApp] 200 GET /jean-zay-pp1_8005/static/auth/js/main.min.js?v=20201211173135 (10.148.0.38) 5.49ms
+[D 17:31:58.395 NotebookApp] 200 GET /jean-zay-pp1_8005/static/base/images/favicon.ico?v=50afa725b5de8b00030139d09b38620224d4e7dba47c07ef0e86d4643f30c9bfe6bb7e1a4a1c561aa32834480909a4b6fe7cd1e17f7159330b6b5914bf45a880 (10.148.0.38) 1.00ms
+[I 17:32:00.029 NotebookApp] 302 POST /jean-zay-pp1_8005/login?next=%2Fjean-zay-pp1_8005%2Ftree%3F (10.148.0.38) 1.00ms
+[D 17:32:00.128 NotebookApp] Using contents: services/contents
+[D 17:32:00.154 NotebookApp] Path tree/js/main.min.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/tree/js/main.min.js
+[D 17:32:00.160 NotebookApp] 200 GET /jean-zay-pp1_8005/tree? (10.148.0.38) 33.08ms
+[D 17:32:00.282 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=fb45616eef2c454960f91fcd2a04efeda84cfacccf0c5d741ba2793dc1dbd6d3ab01aaae6485222945774c7d7a9a2e9fb87e0d8ef1ea96893aa6906147a371bb (10.148.0.38) 0.81ms
+[D 17:32:00.287 NotebookApp] 304 GET /jean-zay-pp1_8005/static/style/style.min.css?v=56dfd556850eb17b7998c6828467598a322b41593edc758739c66cb2c3fea98f23d0dd8bf8b9b0f5d67bb976a50e4c34f789fe640cbb440fa089e1bf5ec170bd (10.148.0.38) 0.58ms
+[D 17:32:00.295 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.css (10.148.0.38) 0.55ms
+[D 17:32:00.305 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 0.52ms
+[D 17:32:00.313 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 0.49ms
+[D 17:32:00.407 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 0.81ms
+[D 17:32:00.415 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 0.60ms
+[D 17:32:00.423 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 0.51ms
+[D 17:32:00.432 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 0.49ms
+[D 17:32:00.518 NotebookApp] 200 GET /jean-zay-pp1_8005/static/tree/js/main.min.js?v=66bae8fc388b21dcc7fc32ad414181906f9c67cbf211a090d6c6f4a607ef0bac71a3dd5fc7e3317d4d0f2949ae9cc55d03a2a1a8c4256c0cc59bbfe7db290ead (10.148.0.38) 20.11ms
+[D 17:32:00.552 NotebookApp] 304 GET /jean-zay-pp1_8005/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 0.72ms
+[D 17:32:03.115 NotebookApp] Path services/contents.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/services/contents.js
+[D 17:32:03.117 NotebookApp] 200 GET /jean-zay-pp1_8005/static/services/contents.js?v=20201211173135 (10.148.0.38) 5.03ms
+[D 17:32:03.249 NotebookApp] Paths used for configuration of tree: 
+    	/etc/jupyter/nbconfig/tree.json
+[D 17:32:03.249 NotebookApp] Paths used for configuration of tree: 
+    	/usr/local/etc/jupyter/nbconfig/tree.json
+[D 17:32:03.251 NotebookApp] Paths used for configuration of tree: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/tree.json
+[D 17:32:03.252 NotebookApp] Paths used for configuration of tree: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/tree.json
+[D 17:32:03.252 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/tree?_=1607704323032 (10.148.0.38) 4.29ms
+[D 17:32:03.266 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 17:32:03.266 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 17:32:03.266 NotebookApp] Paths used for configuration of common: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/common.json
+[D 17:32:03.266 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/common.json
+[D 17:32:03.267 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/common?_=1607704323033 (10.148.0.38) 1.70ms
+[D 17:32:03.273 NotebookApp] 200 GET /jean-zay-pp1_8005/api/terminals?_=1607704323034 (10.148.0.38) 0.44ms
+[D 17:32:03.283 NotebookApp] Found kernel perf-pangeo in /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels
+[D 17:32:03.289 NotebookApp] Found kernel python3 in /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/share/jupyter/kernels
+[D 17:32:03.305 NotebookApp] 200 GET /jean-zay-pp1_8005/api/kernelspecs (10.148.0.38) 26.85ms
+[D 17:32:03.316 NotebookApp] 200 GET /jean-zay-pp1_8005/api/sessions?_=1607704323035 (10.148.0.38) 7.32ms
+[D 17:32:03.317 NotebookApp] 200 GET /jean-zay-pp1_8005/api/terminals?_=1607704323036 (10.148.0.38) 0.40ms
+[D 17:32:03.398 NotebookApp] Path custom.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/custom/custom.js
+[D 17:32:03.399 NotebookApp] 200 GET /jean-zay-pp1_8005/custom/custom.js?v=20201211173135 (10.148.0.38) 2.71ms
+[D 17:32:03.410 NotebookApp] Path components/font-awesome/fonts/fontawesome-webfont.woff2 served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/font-awesome/fonts/fontawesome-webfont.woff2
+[D 17:32:03.412 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 (10.148.0.38) 5.75ms
+[D 17:32:03.497 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents?type=directory&_=1607704323037 (10.148.0.38) 6.46ms
+[D 17:32:05.522 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git?type=directory&_=1607704323038 (10.148.0.38) 12.26ms
+[D 17:32:07.280 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments?type=directory&_=1607704323039 (10.148.0.38) 23.57ms
+[D 17:32:09.642 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks?type=directory&_=1607704323040 (10.148.0.38) 8.30ms
+[D 17:32:11.049 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay?type=directory&_=1607704323041 (10.148.0.38) 10.13ms
+[D 17:32:13.693 NotebookApp] Using contents: services/contents
+[D 17:32:13.730 NotebookApp] Path base/images/favicon-notebook.ico served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/base/images/favicon-notebook.ico
+[D 17:32:13.735 NotebookApp] Path components/bootstrap-tour/build/css/bootstrap-tour.min.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css
+[D 17:32:13.738 NotebookApp] Path components/codemirror/lib/codemirror.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/codemirror/lib/codemirror.css
+[D 17:32:13.745 NotebookApp] Path notebook/css/override.css served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/notebook/css/override.css
+[D 17:32:14.603 NotebookApp] Path components/text-encoding/lib/encoding.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/text-encoding/lib/encoding.js
+[D 17:32:14.607 NotebookApp] Path notebook/js/main.min.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/notebook/js/main.min.js
+[D 17:32:14.616 NotebookApp] 200 GET /jean-zay-pp1_8005/notebooks/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante.ipynb (10.148.0.38) 923.73ms
+[D 17:32:15.404 NotebookApp] Path components/MathJax/MathJax.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/MathJax.js
+[D 17:32:15.407 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full,Safe&delayStartupUntil=configured (10.148.0.38) 5.52ms
+[D 17:32:15.479 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/codemirror/lib/codemirror.css?v=81fecb54f83101e2bbe6d2e3131e252ac83f2910366100ca83ba4834f5d41754c837f306eecfdceed05f9c9111614942e2ced5acdd8040746b66c6bef0141d0e (10.148.0.38) 0.80ms
+[D 17:32:15.492 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 0.54ms
+[D 17:32:15.504 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=fb45616eef2c454960f91fcd2a04efeda84cfacccf0c5d741ba2793dc1dbd6d3ab01aaae6485222945774c7d7a9a2e9fb87e0d8ef1ea96893aa6906147a371bb (10.148.0.38) 0.51ms
+[D 17:32:15.515 NotebookApp] 200 GET /jean-zay-pp1_8005/static/notebook/css/override.css?v=16733f6ba5f2224692fe4e654f3cbb2e3cae82f1df06ca53aa1cb88b147465f16c968c0898e2b0203a7ad3a469f82b959e26bb4b27b790f7f364c4336449b0aa (10.148.0.38) 0.56ms
+[D 17:32:15.523 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css?v=95c93e52db61ab29625defe55361384ce6776a7d303b97da5a73fef5ddf8e391a6223599a0b58669476bd71645a4f0022df0517c88b0c05df80ba465e36f5417 (10.148.0.38) 0.56ms
+[D 17:32:15.808 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 0.50ms
+[D 17:32:15.861 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 0.53ms
+[D 17:32:15.871 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 0.49ms
+[D 17:32:15.879 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 0.52ms
+[D 17:32:15.887 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 0.50ms
+[D 17:32:15.896 NotebookApp] 304 GET /jean-zay-pp1_8005/static/style/style.min.css?v=56dfd556850eb17b7998c6828467598a322b41593edc758739c66cb2c3fea98f23d0dd8bf8b9b0f5d67bb976a50e4c34f789fe640cbb440fa089e1bf5ec170bd (10.148.0.38) 0.49ms
+[D 17:32:15.973 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.css (10.148.0.38) 0.54ms
+[D 17:32:16.010 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/text-encoding/lib/encoding.js?v=737ac6f9f978afb6348b5914877e7d7136de7465cd4cdf389bad9a6b3ad5ceffbfb23febc75c23378967d7d36f98f5388208e8eb78c80f2bf47e8f8c000481ad (10.148.0.38) 0.97ms
+[D 17:32:16.046 NotebookApp] Path components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js
+[D 17:32:16.062 NotebookApp] 200 GET /jean-zay-pp1_8005/static/notebook/js/main.min.js?v=5a54b33238c9d0253115aa1cba03d259e01a184c7ddb176ba00d3de3cb1689a55da82516aee695c50dbcb07db4b4e4731ce15256e0eeb5307e15ed285dc96a55 (10.148.0.38) 42.57ms
+[D 17:32:16.063 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js?V=2.7.9 (10.148.0.38) 18.67ms
+[D 17:32:16.139 NotebookApp] 304 GET /jean-zay-pp1_8005/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 0.50ms
+[D 17:32:20.033 NotebookApp] Path components/MathJax/config/Safe.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/config/Safe.js
+[D 17:32:20.034 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/config/Safe.js?V=2.7.9 (10.148.0.38) 2.65ms
+[D 17:32:22.290 NotebookApp] 200 GET /jean-zay-pp1_8005/static/base/images/favicon-notebook.ico?v=eb02bb6f6435d048eba1bf1bd3b3621f8c14f26518dbadd8efd4ee6ee2721caf2367bc0cbc27d2ee2c35bc3b035aad07c6d625422b9445bf301897f493d0edc5 (10.148.0.38) 0.94ms
+[D 17:32:22.570 NotebookApp] 304 GET /jean-zay-pp1_8005/static/services/contents.js?v=20201211173135 (10.148.0.38) 0.83ms
+[D 17:32:22.711 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 17:32:22.712 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 17:32:22.714 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/notebook.json
+[D 17:32:22.716 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/notebook.json
+[D 17:32:22.717 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/notebook?_=1607704342195 (10.148.0.38) 6.42ms
+[D 17:32:22.720 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 17:32:22.720 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 17:32:22.720 NotebookApp] Paths used for configuration of common: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/common.json
+[D 17:32:22.721 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/common.json
+[D 17:32:22.721 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/common?_=1607704342196 (10.148.0.38) 1.64ms
+[D 17:32:22.818 NotebookApp] Path components/MathJax/extensions/TeX/newcommand.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/extensions/TeX/newcommand.js
+[D 17:32:22.820 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/TeX/newcommand.js?V=2.7.9 (10.148.0.38) 5.82ms
+[D 17:32:22.873 NotebookApp] Path components/MathJax/extensions/TeX/begingroup.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/extensions/TeX/begingroup.js
+[D 17:32:22.874 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/TeX/begingroup.js?V=2.7.9 (10.148.0.38) 2.45ms
+[D 17:32:22.911 NotebookApp] Path components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js
+[D 17:32:22.913 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js?V=2.7.9 (10.148.0.38) 8.40ms
+[D 17:32:22.940 NotebookApp] Path components/MathJax/extensions/MathML/content-mathml.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/extensions/MathML/content-mathml.js
+[D 17:32:22.942 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/MathML/content-mathml.js?V=2.7.9 (10.148.0.38) 5.37ms
+[D 17:32:22.949 NotebookApp] Found kernel perf-pangeo in /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels
+[D 17:32:22.950 NotebookApp] Found kernel python3 in /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/share/jupyter/kernels
+[D 17:32:22.951 NotebookApp] 304 GET /jean-zay-pp1_8005/api/kernelspecs (10.148.0.38) 1.64ms
+[D 17:32:22.958 NotebookApp] Path components/MathJax/extensions/Safe.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/components/MathJax/extensions/Safe.js
+[D 17:32:22.960 NotebookApp] 200 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/Safe.js?V=2.7.9 (10.148.0.38) 3.12ms
+[D 17:32:22.997 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante.ipynb?type=notebook&_=1607704342197 (10.148.0.38) 30.01ms
+[D 17:32:23.134 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 (10.148.0.38) 1.16ms
+[D 17:32:23.138 NotebookApp] Path jupyter-js-widgets/extension.js served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/share/jupyter/nbextensions/jupyter-js-widgets/extension.js
+[D 17:32:23.143 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.js?v=20201211173135 (10.148.0.38) 0.67ms
+[D 17:32:23.191 NotebookApp] 200 GET /jean-zay-pp1_8005/nbextensions/jupyter-js-widgets/extension.js?v=20201211173135 (10.148.0.38) 57.11ms
+[D 17:32:23.233 NotebookApp] Starting kernel: ['/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/bin/python', '-m', 'ipykernel_launcher', '-f', '/gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/runtime/kernel-9a663d6b-5125-492e-ac16-a633e448ef9f.json']
+[D 17:32:23.245 NotebookApp] Connecting to: tcp://127.0.0.1:38947
+[D 17:32:23.263 NotebookApp] Connecting to: tcp://127.0.0.1:35483
+[I 17:32:23.264 NotebookApp] Kernel started: 9a663d6b-5125-492e-ac16-a633e448ef9f, name: perf-pangeo
+[D 17:32:23.264 NotebookApp] Kernel args: {'kernel_name': 'perf-pangeo', 'cwd': '/gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay'}
+[D 17:32:23.269 NotebookApp] 201 POST /jean-zay-pp1_8005/api/sessions (10.148.0.38) 75.86ms
+[D 17:32:23.271 NotebookApp] Serving kernel resource from: /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels/perf-pangeo
+[D 17:32:23.273 NotebookApp] 200 GET /jean-zay-pp1_8005/kernelspecs/perf-pangeo/logo-64x64.png (10.148.0.38) 2.83ms
+[D 17:32:23.285 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante.ipynb/checkpoints?_=1607704342198 (10.148.0.38) 12.54ms
+[D 17:32:23.745 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (starting)
+[D 17:32:24.670 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels
+[D 17:32:24.671 NotebookApp] Requesting kernel info from 9a663d6b-5125-492e-ac16-a633e448ef9f
+[D 17:32:24.671 NotebookApp] Connecting to: tcp://127.0.0.1:40695
+[D 17:32:24.674 NotebookApp] Received kernel info: {'status': 'ok', 'protocol_version': '5.3', 'implementation': 'ipython', 'implementation_version': '7.19.0', 'language_info': {'name': 'python', 'version': '3.7.3', 'mimetype': 'text/x-python', 'codemirror_mode': {'name': 'ipython', 'version': 3}, 'pygments_lexer': 'ipython3', 'nbconvert_exporter': 'python', 'file_extension': '.py'}, 'banner': "Python 3.7.3 | packaged by conda-forge | (default, Dec  6 2019, 08:54:18) \nType 'copyright', 'credits' or 'license' for more information\nIPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\n", 'help_links': [{'text': 'Python Reference', 'url': 'https://docs.python.org/3.7'}, {'text': 'IPython Reference', 'url': 'https://ipython.org/documentation.html'}, {'text': 'NumPy Reference', 'url': 'https://docs.scipy.org/doc/numpy/reference/'}, {'text': 'SciPy Reference', 'url': 'https://docs.scipy.org/doc/scipy/reference/'}, {'text': 'Matplotlib Reference', 'url': 'https://matplotlib.org/contents.html'}, {'text': 'SymPy Reference', 'url': 'http://docs.sympy.org/latest/index.html'}, {'text': 'pandas Reference', 'url': 'https://pandas.pydata.org/pandas-docs/stable/'}]}
+[D 17:32:24.675 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (busy)
+[D 17:32:24.675 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (idle)
+[D 17:32:24.676 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels?session_id=885cb6220caa43238726e93ac58fb280 (10.148.0.38) 6.20ms
+[D 17:32:24.676 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels
+[D 17:32:24.676 NotebookApp] Getting buffer for 9a663d6b-5125-492e-ac16-a633e448ef9f
+[D 17:32:24.676 NotebookApp] Connecting to: tcp://127.0.0.1:40695
+[D 17:32:24.676 NotebookApp] Connecting to: tcp://127.0.0.1:38947
+[D 17:32:24.676 NotebookApp] Connecting to: tcp://127.0.0.1:35483
+[D 17:32:24.676 NotebookApp] Connecting to: tcp://127.0.0.1:47803
+[I 17:32:25.311 NotebookApp] Copying git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante.ipynb to /git/perf-pangeo-deployments/notebooks/jean-zay
+[D 17:32:25.328 NotebookApp] Saving /gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante-Copy1.ipynb
+[D 17:32:25.363 NotebookApp] 201 POST /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay (10.148.0.38) 52.96ms
+[D 17:32:25.486 NotebookApp] Using contents: services/contents
+[D 17:32:25.751 NotebookApp] 200 GET /jean-zay-pp1_8005/notebooks/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante-Copy1.ipynb (10.148.0.38) 265.20ms
+[D 17:32:25.755 NotebookApp] Path base/images/favicon-busy-1.ico served from /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/notebook/static/base/images/favicon-busy-1.ico
+[D 17:32:25.756 NotebookApp] 200 GET /jean-zay-pp1_8005/static/base/images/favicon-busy-1.ico (10.148.0.38) 2.29ms
+[D 17:32:25.953 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full,Safe&delayStartupUntil=configured (10.148.0.38) 0.82ms
+[D 17:32:25.961 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=fb45616eef2c454960f91fcd2a04efeda84cfacccf0c5d741ba2793dc1dbd6d3ab01aaae6485222945774c7d7a9a2e9fb87e0d8ef1ea96893aa6906147a371bb (10.148.0.38) 0.61ms
+[D 17:32:25.970 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 0.53ms
+[D 17:32:25.979 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 0.51ms
+[D 17:32:25.987 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 0.49ms
+[D 17:32:26.153 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css?v=95c93e52db61ab29625defe55361384ce6776a7d303b97da5a73fef5ddf8e391a6223599a0b58669476bd71645a4f0022df0517c88b0c05df80ba465e36f5417 (10.148.0.38) 0.85ms
+[D 17:32:26.161 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 0.61ms
+[D 17:32:26.169 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/codemirror/lib/codemirror.css?v=81fecb54f83101e2bbe6d2e3131e252ac83f2910366100ca83ba4834f5d41754c837f306eecfdceed05f9c9111614942e2ced5acdd8040746b66c6bef0141d0e (10.148.0.38) 0.55ms
+[D 17:32:26.179 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 0.55ms
+[D 17:32:26.201 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/text-encoding/lib/encoding.js?v=737ac6f9f978afb6348b5914877e7d7136de7465cd4cdf389bad9a6b3ad5ceffbfb23febc75c23378967d7d36f98f5388208e8eb78c80f2bf47e8f8c000481ad (10.148.0.38) 0.53ms
+[D 17:32:26.278 NotebookApp] 304 GET /jean-zay-pp1_8005/static/style/style.min.css?v=56dfd556850eb17b7998c6828467598a322b41593edc758739c66cb2c3fea98f23d0dd8bf8b9b0f5d67bb976a50e4c34f789fe640cbb440fa089e1bf5ec170bd (10.148.0.38) 0.68ms
+[D 17:32:26.288 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 0.55ms
+[D 17:32:26.295 NotebookApp] 304 GET /jean-zay-pp1_8005/static/notebook/css/override.css?v=16733f6ba5f2224692fe4e654f3cbb2e3cae82f1df06ca53aa1cb88b147465f16c968c0898e2b0203a7ad3a469f82b959e26bb4b27b790f7f364c4336449b0aa (10.148.0.38) 0.51ms
+[D 17:32:26.326 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.css (10.148.0.38) 0.55ms
+[D 17:32:26.335 NotebookApp] 304 GET /jean-zay-pp1_8005/static/notebook/js/main.min.js?v=5a54b33238c9d0253115aa1cba03d259e01a184c7ddb176ba00d3de3cb1689a55da82516aee695c50dbcb07db4b4e4731ce15256e0eeb5307e15ed285dc96a55 (10.148.0.38) 0.51ms
+[D 17:32:26.398 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js?V=2.7.9 (10.148.0.38) 0.65ms
+[D 17:32:26.525 NotebookApp] 304 GET /jean-zay-pp1_8005/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 0.83ms
+[D 17:32:26.550 NotebookApp] 304 GET /jean-zay-pp1_8005/static/services/contents.js?v=20201211173135 (10.148.0.38) 0.70ms
+[D 17:32:26.651 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/config/Safe.js?V=2.7.9 (10.148.0.38) 0.85ms
+[D 17:32:26.744 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 17:32:26.744 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 17:32:26.744 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/notebook.json
+[D 17:32:26.745 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/notebook.json
+[D 17:32:26.745 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/notebook?_=1607704346488 (10.148.0.38) 2.47ms
+[D 17:32:26.752 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 17:32:26.752 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 17:32:26.752 NotebookApp] Paths used for configuration of common: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/common.json
+[D 17:32:26.752 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/common.json
+[D 17:32:26.753 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/common?_=1607704346489 (10.148.0.38) 1.61ms
+[D 17:32:26.760 NotebookApp] Found kernel perf-pangeo in /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels
+[D 17:32:26.760 NotebookApp] Found kernel python3 in /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/share/jupyter/kernels
+[D 17:32:26.761 NotebookApp] 304 GET /jean-zay-pp1_8005/api/kernelspecs (10.148.0.38) 1.50ms
+[D 17:32:26.783 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante-Copy1.ipynb?type=notebook&_=1607704346490 (10.148.0.38) 15.65ms
+[D 17:32:26.787 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.js?v=20201211173135 (10.148.0.38) 0.64ms
+[D 17:32:26.794 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/TeX/newcommand.js?V=2.7.9 (10.148.0.38) 0.52ms
+[D 17:32:26.908 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/TeX/begingroup.js?V=2.7.9 (10.148.0.38) 0.78ms
+[D 17:32:26.916 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/MathML/content-mathml.js?V=2.7.9 (10.148.0.38) 0.58ms
+[D 17:32:26.947 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js?V=2.7.9 (10.148.0.38) 0.57ms
+[D 17:32:26.956 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/Safe.js?V=2.7.9 (10.148.0.38) 0.51ms
+[D 17:32:26.971 NotebookApp] 304 GET /jean-zay-pp1_8005/nbextensions/jupyter-js-widgets/extension.js?v=20201211173135 (10.148.0.38) 0.56ms
+[D 17:32:27.030 NotebookApp] Starting kernel: ['/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/bin/python', '-m', 'ipykernel_launcher', '-f', '/gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/runtime/kernel-e1efeb32-7c34-4412-be48-62b0c19a9cc1.json']
+[D 17:32:27.046 NotebookApp] Connecting to: tcp://127.0.0.1:36877
+[D 17:32:27.047 NotebookApp] Connecting to: tcp://127.0.0.1:42649
+[I 17:32:27.047 NotebookApp] Kernel started: e1efeb32-7c34-4412-be48-62b0c19a9cc1, name: perf-pangeo
+[D 17:32:27.047 NotebookApp] Kernel args: {'kernel_name': 'perf-pangeo', 'cwd': '/gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay'}
+[D 17:32:27.052 NotebookApp] 201 POST /jean-zay-pp1_8005/api/sessions (10.148.0.38) 25.62ms
+[D 17:32:27.053 NotebookApp] Serving kernel resource from: /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels/perf-pangeo
+[D 17:32:27.054 NotebookApp] 304 GET /jean-zay-pp1_8005/kernelspecs/perf-pangeo/logo-64x64.png (10.148.0.38) 1.42ms
+[D 17:32:27.055 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante-Copy1.ipynb/checkpoints?_=1607704346491 (10.148.0.38) 0.74ms
+[D 17:32:27.427 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (starting)
+[D 17:32:44.902 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:32:44.903 NotebookApp] Requesting kernel info from e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:32:44.904 NotebookApp] Connecting to: tcp://127.0.0.1:55381
+[D 17:32:44.907 NotebookApp] Received kernel info: {'status': 'ok', 'protocol_version': '5.3', 'implementation': 'ipython', 'implementation_version': '7.19.0', 'language_info': {'name': 'python', 'version': '3.7.3', 'mimetype': 'text/x-python', 'codemirror_mode': {'name': 'ipython', 'version': 3}, 'pygments_lexer': 'ipython3', 'nbconvert_exporter': 'python', 'file_extension': '.py'}, 'banner': "Python 3.7.3 | packaged by conda-forge | (default, Dec  6 2019, 08:54:18) \nType 'copyright', 'credits' or 'license' for more information\nIPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\n", 'help_links': [{'text': 'Python Reference', 'url': 'https://docs.python.org/3.7'}, {'text': 'IPython Reference', 'url': 'https://ipython.org/documentation.html'}, {'text': 'NumPy Reference', 'url': 'https://docs.scipy.org/doc/numpy/reference/'}, {'text': 'SciPy Reference', 'url': 'https://docs.scipy.org/doc/scipy/reference/'}, {'text': 'Matplotlib Reference', 'url': 'https://matplotlib.org/contents.html'}, {'text': 'SymPy Reference', 'url': 'http://docs.sympy.org/latest/index.html'}, {'text': 'pandas Reference', 'url': 'https://pandas.pydata.org/pandas-docs/stable/'}]}
+[D 17:32:44.915 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:32:44.915 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:32:44.916 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels?session_id=3aa61af9571241f683824d8674860408 (10.148.0.38) 14.58ms
+[D 17:32:44.916 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:32:44.916 NotebookApp] Getting buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:32:44.916 NotebookApp] Connecting to: tcp://127.0.0.1:55381
+[D 17:32:44.916 NotebookApp] Connecting to: tcp://127.0.0.1:36877
+[D 17:32:44.916 NotebookApp] Connecting to: tcp://127.0.0.1:42649
+[D 17:32:44.916 NotebookApp] Connecting to: tcp://127.0.0.1:37641
+[D 17:32:54.717 NotebookApp] Websocket closed 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[I 17:32:54.717 NotebookApp] Starting buffering for 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[D 17:32:54.717 NotebookApp] Clearing buffer for 9a663d6b-5125-492e-ac16-a633e448ef9f
+[D 17:33:05.189 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels
+[D 17:33:05.190 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels?session_id=885cb6220caa43238726e93ac58fb280 (10.148.0.38) 1.68ms
+[D 17:33:05.190 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels
+[D 17:33:05.190 NotebookApp] Getting buffer for 9a663d6b-5125-492e-ac16-a633e448ef9f
+[I 17:33:05.190 NotebookApp] Restoring connection for 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[D 17:33:12.382 NotebookApp] Renaming checkpoint /gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/.ipynb_checkpoints/2020-12-11-AA-temp-mean-frontale-plante-Copy1-checkpoint.ipynb -> /gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/.ipynb_checkpoints/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask-checkpoint.ipynb
+[D 17:33:12.383 NotebookApp] 200 PATCH /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-frontale-plante-Copy1.ipynb (10.148.0.38) 3.39ms
+[D 17:33:12.497 NotebookApp] 200 PATCH /jean-zay-pp1_8005/api/sessions/81921d02-089b-4dbb-8b2e-9d2b1ddadbaf (10.148.0.38) 1.55ms
+[D 17:33:14.965 NotebookApp] Websocket closed e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[I 17:33:14.966 NotebookApp] Starting buffering for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:14.966 NotebookApp] Clearing buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:33:18.238 NotebookApp] Starting kernel: ['/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/bin/python', '-m', 'ipykernel_launcher', '-f', '/gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/runtime/kernel-e1efeb32-7c34-4412-be48-62b0c19a9cc1.json']
+[D 17:33:18.255 NotebookApp] Connecting to: tcp://127.0.0.1:36877
+[I 17:33:18.256 NotebookApp] Kernel restarted: e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:33:18.256 NotebookApp] Connecting to: tcp://127.0.0.1:55381
+[D 17:33:18.257 NotebookApp] 200 POST /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/restart (10.148.0.38) 322.02ms
+[D 17:33:18.258 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:18.260 NotebookApp] Buffering msg on e1efeb32-7c34-4412-be48-62b0c19a9cc1:iopub
+[D 17:33:18.260 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: shutdown_reply
+[D 17:33:18.260 NotebookApp] Buffering msg on e1efeb32-7c34-4412-be48-62b0c19a9cc1:iopub
+[D 17:33:18.261 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:33:18.261 NotebookApp] Buffering msg on e1efeb32-7c34-4412-be48-62b0c19a9cc1:iopub
+[D 17:33:18.644 NotebookApp] Kernel info reply received: e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:33:24.114 NotebookApp] 200 GET /jean-zay-pp1_8005/api/sessions?_=1607704323042 (10.148.0.38) 1.14ms
+[D 17:33:24.205 NotebookApp] 200 GET /jean-zay-pp1_8005/api/terminals?_=1607704323043 (10.148.0.38) 0.70ms
+[D 17:33:24.265 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay?type=directory&_=1607704323044 (10.148.0.38) 3.17ms
+[D 17:33:25.311 NotebookApp] Using contents: services/contents
+[D 17:33:25.603 NotebookApp] 200 GET /jean-zay-pp1_8005/notebooks/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-dask-jobqueue-plante.ipynb (10.148.0.38) 293.03ms
+[D 17:33:25.925 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full,Safe&delayStartupUntil=configured (10.148.0.38) 0.91ms
+[D 17:33:26.327 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=fb45616eef2c454960f91fcd2a04efeda84cfacccf0c5d741ba2793dc1dbd6d3ab01aaae6485222945774c7d7a9a2e9fb87e0d8ef1ea96893aa6906147a371bb (10.148.0.38) 0.83ms
+[D 17:33:26.550 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 1.56ms
+[D 17:33:26.551 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 1.64ms
+[D 17:33:26.551 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 1.82ms
+[D 17:33:26.552 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:33:26.553 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels?session_id=3aa61af9571241f683824d8674860408 (10.148.0.38) 1.42ms
+[D 17:33:26.553 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:33:26.553 NotebookApp] Getting buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[I 17:33:26.553 NotebookApp] Restoring connection for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[I 17:33:26.553 NotebookApp] Replaying 3 buffered messages
+[D 17:33:26.831 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 1.67ms
+[D 17:33:26.832 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js?V=2.7.9 (10.148.0.38) 1.74ms
+[D 17:33:26.832 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css?v=95c93e52db61ab29625defe55361384ce6776a7d303b97da5a73fef5ddf8e391a6223599a0b58669476bd71645a4f0022df0517c88b0c05df80ba465e36f5417 (10.148.0.38) 1.93ms
+[D 17:33:26.832 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 2.12ms
+[D 17:33:26.833 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 2.29ms
+[D 17:33:26.834 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/codemirror/lib/codemirror.css?v=81fecb54f83101e2bbe6d2e3131e252ac83f2910366100ca83ba4834f5d41754c837f306eecfdceed05f9c9111614942e2ced5acdd8040746b66c6bef0141d0e (10.148.0.38) 0.58ms
+[D 17:33:26.960 NotebookApp] 304 GET /jean-zay-pp1_8005/static/style/style.min.css?v=56dfd556850eb17b7998c6828467598a322b41593edc758739c66cb2c3fea98f23d0dd8bf8b9b0f5d67bb976a50e4c34f789fe640cbb440fa089e1bf5ec170bd (10.148.0.38) 0.80ms
+[D 17:33:26.968 NotebookApp] 304 GET /jean-zay-pp1_8005/static/notebook/css/override.css?v=16733f6ba5f2224692fe4e654f3cbb2e3cae82f1df06ca53aa1cb88b147465f16c968c0898e2b0203a7ad3a469f82b959e26bb4b27b790f7f364c4336449b0aa (10.148.0.38) 0.59ms
+[D 17:33:26.976 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.css (10.148.0.38) 0.52ms
+[D 17:33:26.991 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/config/Safe.js?V=2.7.9 (10.148.0.38) 0.49ms
+[D 17:33:27.044 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/text-encoding/lib/encoding.js?v=737ac6f9f978afb6348b5914877e7d7136de7465cd4cdf389bad9a6b3ad5ceffbfb23febc75c23378967d7d36f98f5388208e8eb78c80f2bf47e8f8c000481ad (10.148.0.38) 0.63ms
+[D 17:33:27.069 NotebookApp] 304 GET /jean-zay-pp1_8005/static/notebook/js/main.min.js?v=5a54b33238c9d0253115aa1cba03d259e01a184c7ddb176ba00d3de3cb1689a55da82516aee695c50dbcb07db4b4e4731ce15256e0eeb5307e15ed285dc96a55 (10.148.0.38) 0.59ms
+[D 17:33:27.077 NotebookApp] 200 GET /jean-zay-pp1_8005/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 0.74ms
+[D 17:33:27.322 NotebookApp] 200 GET /jean-zay-pp1_8005/static/base/images/favicon-notebook.ico (10.148.0.38) 0.90ms
+[D 17:33:27.334 NotebookApp] 304 GET /jean-zay-pp1_8005/static/services/contents.js?v=20201211173135 (10.148.0.38) 0.63ms
+[D 17:33:27.334 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[W 17:33:27.335 NotebookApp] Replacing stale connection: e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:27.426 NotebookApp] Websocket closed e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[I 17:33:27.426 NotebookApp] Starting buffering for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:27.426 NotebookApp] Clearing buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:33:27.427 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels?session_id=3aa61af9571241f683824d8674860408 (10.148.0.38) 92.39ms
+[D 17:33:27.427 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:33:27.427 NotebookApp] Getting buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[I 17:33:27.427 NotebookApp] Restoring connection for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:27.486 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 17:33:27.487 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 17:33:27.487 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/notebook.json
+[D 17:33:27.488 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/notebook.json
+[D 17:33:27.488 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/notebook?_=1607704407173 (10.148.0.38) 2.39ms
+[D 17:33:27.493 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 17:33:27.494 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 17:33:27.494 NotebookApp] Paths used for configuration of common: 
+    	/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/etc/jupyter/nbconfig/common.json
+[D 17:33:27.495 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genige01/rote001/.jupyter/nbconfig/common.json
+[D 17:33:27.495 NotebookApp] 200 GET /jean-zay-pp1_8005/api/config/common?_=1607704407174 (10.148.0.38) 2.35ms
+[D 17:33:27.511 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/TeX/newcommand.js?V=2.7.9 (10.148.0.38) 0.60ms
+[D 17:33:27.519 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/TeX/begingroup.js?V=2.7.9 (10.148.0.38) 0.54ms
+[D 17:33:27.537 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/MathML/content-mathml.js?V=2.7.9 (10.148.0.38) 0.57ms
+[D 17:33:27.544 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:27.545 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:33:27.546 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:27.548 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:33:27.549 NotebookApp] Found kernel perf-pangeo in /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels
+[D 17:33:27.549 NotebookApp] Found kernel python3 in /gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/share/jupyter/kernels
+[D 17:33:27.550 NotebookApp] 304 GET /jean-zay-pp1_8005/api/kernelspecs (10.148.0.38) 1.60ms
+[D 17:33:27.623 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-dask-jobqueue-plante.ipynb?type=notebook&_=1607704407175 (10.148.0.38) 35.61ms
+[D 17:33:27.628 NotebookApp] 304 GET /jean-zay-pp1_8005/custom/custom.js?v=20201211173135 (10.148.0.38) 0.77ms
+[D 17:33:27.629 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js?V=2.7.9 (10.148.0.38) 0.54ms
+[D 17:33:27.694 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/MathJax/extensions/Safe.js?V=2.7.9 (10.148.0.38) 0.74ms
+[D 17:33:27.701 NotebookApp] 304 GET /jean-zay-pp1_8005/nbextensions/jupyter-js-widgets/extension.js?v=20201211173135 (10.148.0.38) 0.63ms
+[D 17:33:27.756 NotebookApp] 304 GET /jean-zay-pp1_8005/static/components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 (10.148.0.38) 0.74ms
+[D 17:33:27.830 NotebookApp] Starting kernel: ['/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/bin/python', '-m', 'ipykernel_launcher', '-f', '/gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/runtime/kernel-c498c025-12d4-48ca-8c7b-bf05d63248e2.json']
+[D 17:33:27.847 NotebookApp] Connecting to: tcp://127.0.0.1:48691
+[D 17:33:27.848 NotebookApp] Connecting to: tcp://127.0.0.1:57199
+[I 17:33:27.848 NotebookApp] Kernel started: c498c025-12d4-48ca-8c7b-bf05d63248e2, name: perf-pangeo
+[D 17:33:27.849 NotebookApp] Kernel args: {'kernel_name': 'perf-pangeo', 'cwd': '/gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay'}
+[D 17:33:27.853 NotebookApp] 201 POST /jean-zay-pp1_8005/api/sessions (10.148.0.38) 27.06ms
+[D 17:33:27.855 NotebookApp] Serving kernel resource from: /gpfs7kw/linkhome/rech/genige01/rote001/.local/share/jupyter/kernels/perf-pangeo
+[D 17:33:27.855 NotebookApp] 304 GET /jean-zay-pp1_8005/kernelspecs/perf-pangeo/logo-64x64.png (10.148.0.38) 1.42ms
+[D 17:33:27.863 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-dask-jobqueue-plante.ipynb/checkpoints?_=1607704407176 (10.148.0.38) 8.28ms
+[D 17:33:28.025 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels
+[W 17:33:28.026 NotebookApp] Replacing stale connection: 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[D 17:33:28.143 NotebookApp] Websocket closed 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[I 17:33:28.144 NotebookApp] Starting buffering for 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[D 17:33:28.144 NotebookApp] Clearing buffer for 9a663d6b-5125-492e-ac16-a633e448ef9f
+[D 17:33:28.144 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels?session_id=885cb6220caa43238726e93ac58fb280 (10.148.0.38) 119.98ms
+[D 17:33:28.145 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/9a663d6b-5125-492e-ac16-a633e448ef9f/channels
+[D 17:33:28.145 NotebookApp] Getting buffer for 9a663d6b-5125-492e-ac16-a633e448ef9f
+[I 17:33:28.145 NotebookApp] Restoring connection for 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[D 17:33:28.230 NotebookApp] activity on c498c025-12d4-48ca-8c7b-bf05d63248e2: status (starting)
+[D 17:33:28.254 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (busy)
+[D 17:33:28.255 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (idle)
+[D 17:33:28.257 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (busy)
+[D 17:33:28.258 NotebookApp] activity on 9a663d6b-5125-492e-ac16-a633e448ef9f: status (idle)
+[D 17:33:28.484 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/c498c025-12d4-48ca-8c7b-bf05d63248e2/channels
+[D 17:33:28.485 NotebookApp] Requesting kernel info from c498c025-12d4-48ca-8c7b-bf05d63248e2
+[D 17:33:28.485 NotebookApp] Connecting to: tcp://127.0.0.1:50121
+[D 17:33:28.489 NotebookApp] Received kernel info: {'status': 'ok', 'protocol_version': '5.3', 'implementation': 'ipython', 'implementation_version': '7.19.0', 'language_info': {'name': 'python', 'version': '3.7.3', 'mimetype': 'text/x-python', 'codemirror_mode': {'name': 'ipython', 'version': 3}, 'pygments_lexer': 'ipython3', 'nbconvert_exporter': 'python', 'file_extension': '.py'}, 'banner': "Python 3.7.3 | packaged by conda-forge | (default, Dec  6 2019, 08:54:18) \nType 'copyright', 'credits' or 'license' for more information\nIPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\n", 'help_links': [{'text': 'Python Reference', 'url': 'https://docs.python.org/3.7'}, {'text': 'IPython Reference', 'url': 'https://ipython.org/documentation.html'}, {'text': 'NumPy Reference', 'url': 'https://docs.scipy.org/doc/numpy/reference/'}, {'text': 'SciPy Reference', 'url': 'https://docs.scipy.org/doc/scipy/reference/'}, {'text': 'Matplotlib Reference', 'url': 'https://matplotlib.org/contents.html'}, {'text': 'SymPy Reference', 'url': 'http://docs.sympy.org/latest/index.html'}, {'text': 'pandas Reference', 'url': 'https://pandas.pydata.org/pandas-docs/stable/'}]}
+[D 17:33:28.489 NotebookApp] activity on c498c025-12d4-48ca-8c7b-bf05d63248e2: status (busy)
+[D 17:33:28.490 NotebookApp] activity on c498c025-12d4-48ca-8c7b-bf05d63248e2: status (idle)
+[D 17:33:28.490 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/c498c025-12d4-48ca-8c7b-bf05d63248e2/channels?session_id=beb842b3bfb841cb83d70125d7e31c73 (10.148.0.38) 6.13ms
+[D 17:33:28.490 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/c498c025-12d4-48ca-8c7b-bf05d63248e2/channels
+[D 17:33:28.490 NotebookApp] Getting buffer for c498c025-12d4-48ca-8c7b-bf05d63248e2
+[D 17:33:28.490 NotebookApp] Connecting to: tcp://127.0.0.1:50121
+[D 17:33:28.490 NotebookApp] Connecting to: tcp://127.0.0.1:48691
+[D 17:33:28.490 NotebookApp] Connecting to: tcp://127.0.0.1:57199
+[D 17:33:28.491 NotebookApp] Connecting to: tcp://127.0.0.1:46219
+[D 17:33:29.510 NotebookApp] Websocket closed e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[I 17:33:29.510 NotebookApp] Starting buffering for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:29.510 NotebookApp] Clearing buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:33:33.503 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:33:33.528 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels?session_id=3aa61af9571241f683824d8674860408 (10.148.0.38) 24.75ms
+[D 17:33:33.528 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:33:33.528 NotebookApp] Getting buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[I 17:33:33.528 NotebookApp] Restoring connection for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:36.709 NotebookApp] Websocket closed 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[I 17:33:36.710 NotebookApp] Starting buffering for 9a663d6b-5125-492e-ac16-a633e448ef9f:885cb6220caa43238726e93ac58fb280
+[D 17:33:36.710 NotebookApp] Clearing buffer for 9a663d6b-5125-492e-ac16-a633e448ef9f
+[D 17:33:55.934 NotebookApp] Initializing websocket connection /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[W 17:33:55.936 NotebookApp] Replacing stale connection: e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:56.078 NotebookApp] Websocket closed e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[I 17:33:56.078 NotebookApp] Starting buffering for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:56.078 NotebookApp] Clearing buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:33:56.079 NotebookApp] 101 GET /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels?session_id=3aa61af9571241f683824d8674860408 (10.148.0.38) 144.94ms
+[D 17:33:56.079 NotebookApp] Opening websocket /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/channels
+[D 17:33:56.079 NotebookApp] Getting buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[I 17:33:56.079 NotebookApp] Restoring connection for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:33:56.228 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:56.229 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_input
+[D 17:33:58.145 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:33:58.146 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:58.147 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_input
+[D 17:33:58.583 NotebookApp] Websocket closed c498c025-12d4-48ca-8c7b-bf05d63248e2:beb842b3bfb841cb83d70125d7e31c73
+[I 17:33:58.583 NotebookApp] Starting buffering for c498c025-12d4-48ca-8c7b-bf05d63248e2:beb842b3bfb841cb83d70125d7e31c73
+[D 17:33:58.583 NotebookApp] Clearing buffer for c498c025-12d4-48ca-8c7b-bf05d63248e2
+[D 17:33:59.371 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_result
+[D 17:33:59.376 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:33:59.377 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:59.378 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_input
+[D 17:33:59.380 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: stream
+[D 17:33:59.383 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:33:59.384 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:33:59.386 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:34:22.267 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:34:22.268 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_input
+[D 17:34:22.454 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: stream
+[D 17:34:22.457 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:34:22.729 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:34:22.730 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_input
+[D 17:34:22.869 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: stream
+[D 17:34:22.872 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:34:23.052 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:34:23.053 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: execute_input
+[D 17:34:28.015 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb?content=0&_=1607704346492 (10.148.0.38) 1.04ms
+[I 17:34:28.178 NotebookApp] Saving file at /git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb
+[D 17:34:28.179 NotebookApp] Saving /gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb
+[D 17:34:28.319 NotebookApp] 200 PUT /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb (10.148.0.38) 141.03ms
+/gpfsscratch/rech/egi/rote001/miniconda2/envs/perf-pangeo/lib/python3.7/site-packages/dask/array/numpy_compat.py:40: RuntimeWarning: invalid value encountered in true_divide
+  x = np.divide(x1, x2, out)
+[I 17:52:34.870 NotebookApp] Kernel interrupted: e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:52:34.898 NotebookApp] 204 POST /jean-zay-pp1_8005/api/kernels/e1efeb32-7c34-4412-be48-62b0c19a9cc1/interrupt (10.148.0.38) 38.05ms
+[D 17:52:35.651 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: error
+[D 17:52:35.667 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:52:35.668 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (busy)
+[D 17:52:35.670 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: status (idle)
+[D 17:52:35.715 NotebookApp] activity on e1efeb32-7c34-4412-be48-62b0c19a9cc1: stream
+[D 17:54:28.067 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb?content=0&_=1607704346493 (10.148.0.38) 1.11ms
+[I 17:54:28.574 NotebookApp] Saving file at /git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb
+[D 17:54:28.574 NotebookApp] Saving /gpfswork/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb
+[D 17:54:28.597 NotebookApp] 200 PUT /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay/2020-12-11-AA-temp-mean-salloc-12tasks-1cpupertask.ipynb (10.148.0.38) 24.27ms
+[D 17:55:53.862 NotebookApp] Websocket closed e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[I 17:55:53.862 NotebookApp] Starting buffering for e1efeb32-7c34-4412-be48-62b0c19a9cc1:3aa61af9571241f683824d8674860408
+[D 17:55:53.863 NotebookApp] Clearing buffer for e1efeb32-7c34-4412-be48-62b0c19a9cc1
+[D 17:55:53.897 NotebookApp] 200 GET /jean-zay-pp1_8005/api/sessions?_=1607704323045 (10.148.0.38) 1.05ms
+[D 17:55:54.013 NotebookApp] 200 GET /jean-zay-pp1_8005/api/terminals?_=1607704323046 (10.148.0.38) 0.71ms
+[D 17:55:54.176 NotebookApp] 200 GET /jean-zay-pp1_8005/api/contents/git/perf-pangeo-deployments/notebooks/jean-zay?type=directory&_=1607704323047 (10.148.0.38) 3.26ms
+[I 17:56:01.442 NotebookApp] Interrupted...
+[I 17:56:01.449 NotebookApp] Shutting down 3 kernels
+[C 17:56:01.457 NotebookApp] received signal 15, stopping
+[I 17:56:01.957 NotebookApp] Kernel shutdown: 9a663d6b-5125-492e-ac16-a633e448ef9f

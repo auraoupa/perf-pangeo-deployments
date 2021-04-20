@@ -1,0 +1,22 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.159.16.186:46795'
+distributed.diskutils - INFO - Found stale lock file and directory '/gpfsdswork/projects/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/worker-f4ztw2_a', purging
+distributed.dashboard.proxy - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: pip install jupyter-server-proxy
+distributed.worker - INFO -       Start worker at:  tcp://10.159.16.186:37369
+distributed.worker - INFO -          Listening to:  tcp://10.159.16.186:37369
+distributed.worker - INFO -          dashboard at:        10.159.16.186:36729
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.17:34801
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  170.00 GB
+distributed.worker - INFO -       Local Directory: /gpfsdswork/projects/rech/egi/rote001/git/perf-pangeo-deployments/notebooks/jean-zay/worker-58q7enfe
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.17:34801
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.17:34801
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.17:34801
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.17:34801
+distributed.worker - INFO - Waiting to connect to:  tcp://130.84.132.17:34801
+distributed.nanny - INFO - Closing Nanny at 'tcp://10.159.16.186:46795'
+distributed.worker - INFO - Stopping worker at tcp://10.159.16.186:37369
+distributed.worker - INFO - Closed worker has not yet started: None
+distributed.dask_worker - INFO - Timed out starting worker
+distributed.dask_worker - INFO - End worker
